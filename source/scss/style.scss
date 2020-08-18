@@ -11,16 +11,6 @@ body {
   color: #A07B50;
 }
 
-/*
-%text-normal {
-  font-weight: 400;
-}
-
-%text_white {
-  color: #FFFFFF;
-}
-*/
-
 .page-header {
   padding-top: 27px;
   padding-bottom: 275px;
@@ -103,10 +93,10 @@ h1 {
     margin: 0 auto;
     padding: 0 15px;
 
-    .slider__menu {
+    .gallery__menu {
       margin-top: 40px;
 
-      .slider__menu-item {
+      .gallery__menu-item {
         margin: 0 22.5px;
         font-family: Roboto;
         font-weight: 500;
@@ -114,7 +104,7 @@ h1 {
         line-height: 19px;  
         color: rgba(255, 255, 255, 0.2);
 
-        &.slider__menu-item_active {
+        &.gallery__menu-item_active {
           color: rgba(255, 255, 255, 1);
         }
 
@@ -125,18 +115,27 @@ h1 {
         &:last-child {
           margin-right: 0;
         }
-    }
-    
-    .slider__img { //изменить высоту и ширину на min
-      
-      margin-top: 40px;
-      img {
-      
-        min-width: 234px;
-        min-height: 248px;
       }
     }
-  }
+
+    .pet-section__slider { 
+      margin-top: 40px;
+
+
+      .slider__content {
+        margin: 0 auto;
+        width: 80%;
+        min-height: 248px;
+        background-image: url('images/image.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-clip: content-box;
+
+        border: 2px dashed white; //удалить
+      }
+
+    }
 
     .pet-section__btn {
       margin-top: 45px;
