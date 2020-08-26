@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
 * {
@@ -69,6 +70,44 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.pet-section .container .pet-section__slider .slider__content::before {
+  width: 12px;
+  height: 12px;
+  border: solid #A07B50;
+  border-width: 0 1px 1px 0;
+  padding: 1px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  /* Для Safari, Chrome, iOS */
+  -moz-transform: rotate(1 135deg);
+  /* Для Firefox */
+  -ms-transform: rotate(135deg);
+  /* Для IE */
+  -o-transform: rotate(135deg);
+  /* Для Opera */
+}
+
+.pet-section .container .pet-section__slider .slider__content::after {
+  width: 12px;
+  height: 12px;
+  border: solid #A07B50;
+  border-width: 0 1px 1px 0;
+  padding: 1px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  /* Для Safari, Chrome, iOS */
+  -moz-transform: rotate(1 -45deg);
+  /* Для Firefox */
+  -ms-transform: rotate(-45deg);
+  /* Для IE */
+  -o-transform: rotate(-45deg);
+  /* Для Opera */
+}
+
 body {
   font-family: Roboto;
   font-size: 14px;
@@ -78,18 +117,8 @@ body {
   color: #A07B50;
 }
 
-/*
-%text-normal {
-  font-weight: 400;
-}
-
-%text_white {
-  color: #FFFFFF;
-}
-*/
 .page-header {
   padding-top: 27px;
-  padding-bottom: 275px;
   text-align: center;
   font-weight: 400;
   background-color: #181617;
@@ -102,19 +131,30 @@ body {
 }
 
 .page-header .page-header__city {
-  margin-top: 57px;
+  margin-top: 55px;
 }
 
 .page-header h1 {
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
 .page-header .page-header__description {
-  margin-top: 30px;
+  margin-top: 17px;
 }
 
 .page-header .page-header__btn {
-  margin-top: 40px;
+  margin-top: 30px;
+}
+
+.page-header .page-header__image {
+  margin: 20px 0 0 auto;
+  width: 275px;
+  height: 256px;
+  background-image: url("../images/header-background.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  background-clip: content-box;
 }
 
 h1, .section-header__title {
@@ -131,7 +171,7 @@ h1 {
 .ghost-btn {
   display: inline-block;
   min-height: 40px;
-  padding: 15px 18px 16px 18px;
+  padding: 12px 17px 10px 17px;
   border: 0.5px solid #A07B50;
   text-decoration: none;
   color: #ffffff;
@@ -140,7 +180,6 @@ h1 {
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
-  /*vertical-align: middle;*/
 }
 
 .section {
@@ -167,11 +206,11 @@ h1 {
   padding: 0 15px;
 }
 
-.pet-section .container .slider__menu {
+.pet-section .container .gallery__menu {
   margin-top: 40px;
 }
 
-.pet-section .container .slider__menu .slider__menu-item {
+.pet-section .container .gallery__menu .gallery__menu-item {
   margin: 0 22.5px;
   font-family: Roboto;
   font-weight: 500;
@@ -180,29 +219,52 @@ h1 {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.pet-section .container .slider__menu .slider__menu-item.slider__menu-item_active {
+.pet-section .container .gallery__menu .gallery__menu-item.gallery__menu-item_active {
   color: white;
 }
 
-.pet-section .container .slider__menu .slider__menu-item:first-child {
+.pet-section .container .gallery__menu .gallery__menu-item:first-child {
   margin-left: 0;
 }
 
-.pet-section .container .slider__menu .slider__menu-item:last-child {
+.pet-section .container .gallery__menu .gallery__menu-item:last-child {
   margin-right: 0;
 }
 
-.pet-section .container .slider__menu .slider__img {
+.pet-section .container .pet-section__slider {
   margin-top: 40px;
 }
 
-.pet-section .container .slider__menu .slider__img img {
-  min-width: 234px;
+.pet-section .container .pet-section__slider .slider__content {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
   min-height: 248px;
+  -webkit-filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
+          filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
+  background-image: url("../images/image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /*background-size: cover;*/
+  background-clip: content-box;
+}
+
+.pet-section .container .pet-section__slider .slider__content::before {
+  content: "";
+  position: absolute;
+  left: -20px;
+  top: 47.5%;
+}
+
+.pet-section .container .pet-section__slider .slider__content::after {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 47.5%;
 }
 
 .pet-section .container .pet-section__btn {
-  margin-top: 45px;
+  margin-top: 44px;
 }
 
 .breed-section {
@@ -211,17 +273,51 @@ h1 {
 }
 
 .breed-section .container {
-  min-width: 270px;
+  min-width: 280px;
   margin: 0 auto;
   padding: 0 25px;
 }
 
+.breed-section .container .breed-section__image-frame {
+  margin-top: 80px;
+}
+
+.breed-section .container .breed-section__image-frame .breed-section__outline {
+  /*position: relative;*/
+  margin: 0 auto;
+  min-width: 280px;
+  min-height: 280px;
+  border: 0.5px solid #A07B50;
+  background-color: #1F1C1D;
+  background-position: center center;
+  border-radius: 50%;
+  background-clip: content-box;
+}
+
+.breed-section .container .breed-section__image-frame .breed-section__image {
+  /*position: absolute;
+        top: center;
+        left: center;*/
+  margin: 25px auto 0;
+  max-width: 230px;
+  min-height: 230px;
+  text-align: center;
+  /*background-image: url('images/cat4.png');*/
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #151313;
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .features-list {
-  position: relative;
+  margin-top: 40px;
   list-style: none;
 }
 
 .features-list .features-list__item {
+  position: relative;
   margin-left: 8px;
   margin-bottom: 30px;
   text-align: left;
@@ -231,8 +327,8 @@ h1 {
 .features-list .features-list__item::before {
   content: "";
   position: absolute;
-  top: 1792px;
-  left: 15px;
+  top: 4px;
+  left: -18px;
   width: 8px;
   height: 8px;
   border-radius: 50%;

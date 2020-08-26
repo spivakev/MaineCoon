@@ -36,7 +36,6 @@ body {
 
 .page-header {
   padding-top: 27px;
-  padding-bottom: 275px;
   text-align: center;
   font-weight: 400;
   background-color:  #181617;
@@ -48,19 +47,33 @@ body {
   }
 
   .page-header__city {
-    margin-top: 57px;
+    margin-top: 55px;
   }
 
   h1 {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 
   .page-header__description {
-    margin-top: 30px;
+    margin-top: 17px;
   }
 
   .page-header__btn {
-    margin-top: 40px;
+    margin-top: 30px;
+  }
+
+  .page-header__image {
+    margin: 20px 0 0 auto;
+
+    width: 275px;
+    height: 256px;
+   
+      
+    background-image: url("../images/header-background.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    background-clip: content-box;
   }
 }
 
@@ -80,7 +93,7 @@ h1 {
 .ghost-btn {
   display: inline-block;
   min-height: 40px;
-  padding: 15px 18px 16px 18px;
+  padding: 12px 17px 10px 17px;
   border: 0.5px solid #A07B50;
   text-decoration: none;
   color: #ffffff;
@@ -148,10 +161,12 @@ h1 {
         margin: 0 auto;
         width: 80%;
         min-height: 248px;
-        background-image: url('images/image.png');
+        filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
+        //сделать миксин
+        background-image: url('../images/image.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
+        /*background-size: cover;*/
         background-clip: content-box;
 
         &::before {
@@ -174,7 +189,7 @@ h1 {
     }
 
     .pet-section__btn {
-      margin-top: 45px;
+      margin-top: 44px;
     }
   }
 }
@@ -185,18 +200,55 @@ h1 {
   padding-bottom: 60px;
 
   .container {
-    min-width: 270px;
+    min-width: 280px;
     margin: 0 auto;
     padding: 0 25px;
+
+    .breed-section__image-frame {
+      margin-top: 80px;
+
+      .breed-section__outline {
+        /*position: relative;*/
+        margin: 0 auto;
+        min-width: 280px;
+        min-height: 280px;
+        border: 0.5px solid #A07B50;
+        background-color: #1F1C1D;
+        background-position: center center;
+        border-radius: 50%;
+             
+        background-clip: content-box;
+      }
+
+      .breed-section__image {
+        /*position: absolute;
+        top: center;
+        left: center;*/
+        margin: 25px auto 0;
+        max-width: 230px;
+        min-height: 230px;
+        text-align: center;
+        //сделать миксин
+        /*background-image: url('images/cat4.png');*/
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #151313;
+
+        border-radius: 50%;
+       
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+  }
   }
 }
 
-//Может стоит добавить класс и сделать этот блок универсальным?
 .features-list {
-  position: relative;
+  margin-top: 40px;
   list-style: none;
 
   .features-list__item {
+    position: relative;
     margin-left: 8px;
     margin-bottom: 30px;
     text-align: left;
@@ -205,8 +257,8 @@ h1 {
     &::before {
       content: "";
       position: absolute;
-      top: 1792px;
-      left: 15px;
+      top: 4px;
+      left: -18px;
       width: 8px;
       height: 8px;
       border-radius: 50%;

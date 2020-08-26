@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Питомник Мейн-Кунов в Новосибирске. Первый питомник с расширенным спектром услуг">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
   <title>Питомник Мейн-Кунов</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -13,14 +13,15 @@
 <body>
   <div class="page-header">
     <div class="container">
-      <div class="page-header__logo logo">
-        <img src="images/logo.png" alt="Логотип">
-      </div>
+      <a class="page-header__logo logo">
+        <img src="images/crown.svg" alt="Логотип">
+      </a>
       <p class="page-header__city">Новосибирск</p>
       <h1>Питомник Мейн-Кунов</h1>
       <p class="page-header__description">Первый питомник с расширенным спектром услуг</p>
       <a class="page-header__btn ghost-btn" href="#">Смотреть котиков</a>
     </div>
+    <div class="page-header__image"></div>
   </div>
 
   <div class="pet-section section">
@@ -39,9 +40,7 @@
           <a class="gallery__menu-item" href="#">Котята</a>
         </div>
         <div class="pet-section__slider slider">
-          <div class="slider__content">
-            <!--<div class="pet-section__img"></div>-->
-          </div>
+          <div class="slider__content"></div>
         </div>
       </div>
       <a href="#" class="pet-section__btn ghost-btn ">Смотреть больше</a>
@@ -56,7 +55,11 @@
           Приобретая в свой дом этого питомца, вы получите умное
           животное, которому нет равных</p>
       </div>
-      <image></image>
+      <div class="breed-section__image-frame">
+        <div class="breed-section__outline">
+          <div class="breed-section__image"></div>
+        </div>
+      </div>
       <ul class="features-list">
         <li class="features-list__item">Легко уживается в семьях с детьми или другими
           животными</li>
