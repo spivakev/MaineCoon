@@ -32,6 +32,7 @@ body {
   font-weight: 300;
   line-height: 140%;
   color: #A07B50;
+  text-align: center;
 }
 
 .page-header {
@@ -58,39 +59,25 @@ body {
     text-align: center;
     margin-top: 6px;
     margin-bottom: 17px;
+    font-size: 36px;
+    line-height: 42px;
   }
 
   .page-header__btn {
     margin-top: 35px;
   }
-/*
-  .page-header__image {
-    margin: 20px 0 0 auto;
-
-    width: 275px;
-    height: 256px;
-   
-      
-    background-image: url("../images/header-background.png");
-    background-repeat: no-repeat;
-    background-position: right;
-    background-size: cover;
-    background-clip: content-box;
-  }*/
 }
 
-h1, .section-header__title {
+.page-header__title , .section-header__title {
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     color: #ffffff;
 }
 
-h1 {
-    font-size: 36px;
-    line-height: 42px;
+.section-header__title {
+  font-size: 28px;
+  line-height: 32px;
 }
-
-// Может сделать правила для текста с помощью SCSS-шаблонов?
 
 .ghost-btn {
   display: inline-block;
@@ -108,22 +95,6 @@ h1 {
 }
 
 
-.section {
-  padding-top: 50px;
-  text-align: center;
-
-  .section-header {
-    .section-header__title {
-      font-size: 28px;
-      line-height: 32px;
-    }
-
-    .section-header__description {
-      margin-top: 24px;
-    }
-  }
-}
-
 .pet-section {
   padding-top: 54px;
   background-color: #1F1C1D;
@@ -132,6 +103,10 @@ h1 {
     min-width: 290px;
     margin: 0 auto;
     padding: 0 15px;
+
+    .section-header__description {
+      margin-top: 24px;
+    }
 
     .gallery__menu {
       margin-top: 31px;
@@ -171,7 +146,6 @@ h1 {
         background-image: url('../images/image.png');
         background-repeat: no-repeat;
         background-position: center;
-        /*background-size: cover;*/
         background-clip: content-box;
 
         &::before {
@@ -190,7 +164,6 @@ h1 {
           @extend %right-arrow;
         }
       }
-
     }
 
     .pet-section__btn {
@@ -203,50 +176,58 @@ h1 {
 .breed-section {
   background-color: #1F1C1D;
   padding-bottom: 60px;
+  padding-top: 54px;
 
   .container {
-    min-width: 280px;
-    margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 15px;
 
-    .breed-section__image-frame {
-      margin-top: 80px;
-
-      .breed-section__outline {
-        /*position: relative;*/
-        margin: 0 auto;
-        min-width: 280px;
-        min-height: 280px;
-        border: 0.5px solid #A07B50;
-        background-color: #1F1C1D;
-        background-position: center center;
-        border-radius: 50%;
-             
-        background-clip: content-box;
-      }
-
-      .breed-section__image {
-        /*position: absolute;
-        top: center;
-        left: center;*/
-        margin: 25px auto 0;
-        max-width: 230px;
-        min-height: 230px;
-        text-align: center;
-        //сделать миксин
-        /*background-image: url('images/cat4.png');*/
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-color: #151313;
-
-        border-radius: 50%;
-       
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    .section-header__description {         
+      margin: 24px auto 26px;
+      width: 96%;
     }
 
-  }
+    .breed-section__image {
+        position: relative;
+        z-index: 1;
+        width: 267px;
+        margin: 0 auto;
+        margin-bottom: 45px;       
+    
+      
+        & > img {
+          max-width: 100%;
+          height: auto;
+          margin-bottom: 45px;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -2;
+          top: 50px;
+          left: 19px;
+          width: 230px;
+          height: 230px;
+          background-color: #151313;
+          border-radius: 50%;   
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
+          border: 0.5px solid #A07B50;
+          left: -7px;
+          top: 25px;
+        }
+    }
   }
 }
+
 
 .features-list {
   margin-top: 40px;
