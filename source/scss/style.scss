@@ -191,13 +191,12 @@ body {
         z-index: 1;
         width: 267px;
         margin: 0 auto;
-        margin-bottom: 45px;       
+        margin-bottom: 49px;       
     
       
         & > img {
           max-width: 100%;
           height: auto;
-          margin-bottom: 45px;
         }
 
         &::before {
@@ -230,13 +229,12 @@ body {
 
 
 .features-list {
-  margin-top: 40px;
   list-style: none;
 
   .features-list__item {
     position: relative;
-    margin-left: 8px;
-    margin-bottom: 30px;
+    margin: 0 18px 22px;
+  
     text-align: left;
     color: white;
 
@@ -250,9 +248,13 @@ body {
       border-radius: 50%;
       background-color:#A07B50;
     }
-  }
 
-  &:last-child {
-    margin-bottom : 0;
+    &:last-child {
+      margin-bottom : 0;
+    }
+
+    &:nth-child(2n) {
+      width: 165px;
+    } 
   }
 }
