@@ -258,3 +258,36 @@ body {
     } 
   }
 }
+
+.advantages-section {
+  background-color: #181617;
+  padding: 60px 0 60px 0;
+
+  .container {
+    padding: 0 15px;
+  }
+
+  .section-header__description {
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  .advantages-item {
+    text-align: center;
+    vertical-align: middle;
+    padding: 15px;
+    margin-bottom: 30px;
+    min-height: 218px;
+    background-color: #1F1C1D;
+  }
+ 
+  .advantages-item_active {
+    background-color: #A07B50;
+    color: white;
+  }
+
+  .advantages-item__img_active {
+     fill: white;
+  }
+  
+}
