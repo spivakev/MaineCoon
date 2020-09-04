@@ -385,6 +385,8 @@ body {
 .care-section {
   padding: 55px 0 60px;
   background-color: black;
+  background-image: url("../images/care-section-mobile@2x.png");
+  background-size: cover;
 }
 
 .care-section .container {
