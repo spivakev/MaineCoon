@@ -441,4 +441,53 @@ body {
 .care-section .container .care-item .care-item__content {
   color: white;
 }
+
+.team-section {
+  background-color: #181617;
+  padding: 54px 0 60px 0;
+}
+
+.team-section .container {
+  padding: 0 15px;
+}
+
+.team-section .container .section-header__title {
+  margin-bottom: 25px;
+}
+
+.team-section .container .section-header__description {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.team-section .container .team-section__item .team-section__item-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.team-section .container .team-section__item .team-section__item-jobTitle {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 135.94%;
+}
+
+.team-section .container .team-section__item p {
+  color: white;
+}
+
+.team-section .container .social {
+  list-style: none;
+}
+
+.team-section .container .social .social__item {
+  display: inline-block;
+  min-width: 15px;
+}
+
+.team-section .container .social .social__item .social__link span {
+  font-size: 0;
+}
 /*# sourceMappingURL=style.css.map */

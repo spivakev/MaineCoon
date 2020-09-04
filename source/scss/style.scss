@@ -369,4 +369,57 @@ body {
     }
 
   }
-}
+}  
+
+.team-section {
+    background-color: #181617;
+    padding: 54px 0 60px 0;
+
+    .container {
+      padding: 0 15px;
+
+      .section-header__title {
+        margin-bottom: 25px;
+      }
+
+      .section-header__description {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+      .team-section__item{
+        .team-section__item-title {
+          font-style: normal;
+          font-weight: 500;
+          font-size: 18px;
+          line-height: 21px;
+        }
+
+        .team-section__item-jobTitle {
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 135.94%;
+        }
+
+        & p {
+          color: white;
+        }
+      }
+
+
+      .social {
+        list-style: none;
+
+        .social__item {
+          display: inline-block;
+          min-width: 15px;
+
+          .social__link span {
+            font-size: 0;
+          }
+      }
+    }
+
+    }
+  }
