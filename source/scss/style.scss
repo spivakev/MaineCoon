@@ -24,14 +24,23 @@
   @include arrow(-45deg);
 }
 
+$x-light-black: #151313;
+$x-dark-gray: #181617;
+$x-gray: #1F1C1D;
+
+$primary-color: $x-light-black;
+$secondary-color: $x-gray;
+$teriary-color: $x-dark-gray;
+
 
 .page { 
+  background-color: $primary-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  color: #A07B50;
+  color: #A07B50; //TODO: сделать белый основным цветом
   text-align: center;
 }
 
@@ -42,7 +51,7 @@
 
 
 .header {
-  background-color:  #181617;
+  background-color:  $teriary-color;
   background-image: url("../images/header-cat-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: right  bottom;
@@ -70,25 +79,18 @@
   }
 }
 
-
-.header__title , .section-header__title {
+.title {  //ТОDO: или лучше .section-title?
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     color: #ffffff;
 }
-
-.section-header__title {
-  font-size: 28px;
-  line-height: 32px;
-}
-
 
 .btn {
   display: inline-block;
   min-width: 141px;
   min-height: 40px;
   padding: 12px;
-   font-family: Roboto;
+  font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -103,18 +105,36 @@
 }
 
 
-.pet-section {
-  padding-top: 54px;
-  background-color: #1F1C1D;
-
-  .container {
-    min-width: 290px;
-    margin: 0 auto;
+.section {
+  .section__container {
+    /*min-width: 290px; //TODO: решить, убрать или оставить
+    margin: 0 auto;*/
     padding: 0 15px;
+  }
+}
 
-    .section-header__description {
-      margin-top: 24px;
-    }
+.section-header {
+  .section-header__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .section-header__description {
+    margin-top: 24px;
+  }
+}
+
+.section_dark {
+  background-color: $primary-color;
+}
+
+.section_light {
+  background-color: $secondary-color;
+}
+
+
+.pets {
+  padding-top: 54px;
 
     .gallery__menu {
       margin-top: 31px;
@@ -177,12 +197,11 @@
     .pet-section__btn {
       margin-top: 40px;
     }
-  }
+  
 }
 
 
 .breed-section {
-  background-color: #1F1C1D;
   padding-bottom: 60px;
   padding-top: 54px;
 
@@ -215,7 +234,7 @@
           left: 19px;
           width: 230px;
           height: 230px;
-          background-color: #151313;
+          background-color: $main-background-color;
           border-radius: 50%;   
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         }
@@ -268,12 +287,8 @@
 }
 
 .advantages-section {
-  background-color: #181617;
   padding: 55px 0 60px 0;
 
-  .container {
-    padding: 0 15px;
-  }
 
   .section-header__title {
     padding: 0 48px;
@@ -284,13 +299,19 @@
     margin-bottom: 36px;
   }
 
+
+  .advantages-list {
+    list-style: none;
+  }
+
+
   .advantages-item {
     text-align: center;
     vertical-align: middle;
-    border: 15px solid #1F1C1D;
+    border: 15px solid $secondary-color;
     margin-bottom: 30px;
     min-height: 248px;
-    background-color: #1F1C1D;
+    background-color: $secondary-color;
     color: white;
   }
  
@@ -314,9 +335,9 @@
 }
 
 
+
 .care-section {
   padding: 55px 0 60px;
-  background-color: black;
   background-image: url("../images/care-section-mobile@2x.png");
   background-size: cover;
 
@@ -380,7 +401,6 @@
 }  
 
 .team-section {
-    background-color: #181617;
     padding: 54px 0 60px 0;
 
     .container {
@@ -428,7 +448,7 @@
           padding-top: 65px;
           padding-bottom: 5px;
           margin-top: -65px;
-          background-color: #1F1C1D;
+          background-color: $secondary-color;
 
           .team-section__item-title {
             margin-top: 20px;
@@ -471,6 +491,5 @@
           } 
         }   
       }
-
     }
   }

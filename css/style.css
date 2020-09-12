@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.pet-section .container .pet-section__slider .slider__content::before, .team-section .container .team-slider .team-slider__photo::before {
+.pets .pet-section__slider .slider__content::before, .team-section .container .team-slider .team-slider__photo::before {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Для Opera */
 }
 
-.pet-section .container .pet-section__slider .slider__content::after, .team-section .container .team-slider .team-slider__photo::after {
+.pets .pet-section__slider .slider__content::after, .team-section .container .team-slider .team-slider__photo::after {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -108,7 +108,9 @@ h1, h2, h3, h4, h5, h6 {
   /* Для Opera */
 }
 
+/*$x-dark-grey */
 .page {
+  background-color: #151313;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -152,15 +154,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 35px;
 }
 
-.header__title, .section-header__title {
+.title {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   color: #ffffff;
-}
-
-.section-header__title {
-  font-size: 28px;
-  line-height: 32px;
 }
 
 .btn {
@@ -181,26 +178,31 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff;
 }
 
-.pet-section {
+.section .section__container {
+  /*min-width: 290px; //TODO: решить, убрать или оставить
+    margin: 0 auto;*/
+  padding: 0 15px;
+}
+
+.section-header .section-header__title {
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.section-header .section-header__description {
+  margin-top: 24px;
+}
+
+.pets {
   padding-top: 54px;
   background-color: #1F1C1D;
 }
 
-.pet-section .container {
-  min-width: 290px;
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.pet-section .container .section-header__description {
-  margin-top: 24px;
-}
-
-.pet-section .container .gallery__menu {
+.pets .gallery__menu {
   margin-top: 31px;
 }
 
-.pet-section .container .gallery__menu .gallery__menu-item {
+.pets .gallery__menu .gallery__menu-item {
   margin: 0 21px;
   font-family: Roboto;
   font-weight: 500;
@@ -209,23 +211,23 @@ h1, h2, h3, h4, h5, h6 {
   color: rgba(255, 255, 255, 0.2);
 }
 
-.pet-section .container .gallery__menu .gallery__menu-item.gallery__menu-item_active {
+.pets .gallery__menu .gallery__menu-item.gallery__menu-item_active {
   color: white;
 }
 
-.pet-section .container .gallery__menu .gallery__menu-item:first-child {
+.pets .gallery__menu .gallery__menu-item:first-child {
   margin-left: 0;
 }
 
-.pet-section .container .gallery__menu .gallery__menu-item:last-child {
+.pets .gallery__menu .gallery__menu-item:last-child {
   margin-right: 0;
 }
 
-.pet-section .container .pet-section__slider {
+.pets .pet-section__slider {
   margin-top: 35px;
 }
 
-.pet-section .container .pet-section__slider .slider__content {
+.pets .pet-section__slider .slider__content {
   position: relative;
   margin: 0 auto;
   width: 80%;
@@ -238,21 +240,21 @@ h1, h2, h3, h4, h5, h6 {
   background-clip: content-box;
 }
 
-.pet-section .container .pet-section__slider .slider__content::before {
+.pets .pet-section__slider .slider__content::before {
   content: "";
   position: absolute;
   left: -27px;
   top: 47.5%;
 }
 
-.pet-section .container .pet-section__slider .slider__content::after {
+.pets .pet-section__slider .slider__content::after {
   content: "";
   position: absolute;
   right: -27px;
   top: 47.5%;
 }
 
-.pet-section .container .pet-section__btn {
+.pets .pet-section__btn {
   margin-top: 40px;
 }
 
