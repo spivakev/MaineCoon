@@ -24,66 +24,72 @@
   @include arrow(-45deg);
 }
 
+$x-light-black: #151313;
+$x-dark-gray: #181617;
+$x-gray: #1F1C1D;
 
-body {
+$primary-color: $x-light-black;
+$secondary-color: $x-gray;
+$teriary-color: $x-dark-gray;
+
+
+.page { 
+  background-color: $primary-color;
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
   line-height: 140%;
-  color: #A07B50;
+  color: #A07B50; //TODO: сделать белый основным цветом
+  text-align: center;
 }
 
-.page-header {
-  padding-top: 27px;
-  padding-bottom: 275px;
-  text-align: center;
-  font-weight: 400;
-  background-color:  #181617;
+.page__header {
+  padding-top: 28px;
+  padding-bottom: 276px;
+}
 
-  .container {
-    min-width: 240px;
+
+.header {
+  background-color:  $teriary-color;
+  background-image: url("../images/header-cat-mobile@1x.png");
+  background-repeat: no-repeat;
+  background-position: right  bottom;
+  font-weight: 400;
+
+  .header__container {
     margin: 0 auto;
     padding: 0 40px;
+    min-width: 240px; 
   }
 
-  .page-header__city {
-    margin-top: 57px;
+  .header__city {
+    margin-top: 53px;
   }
 
-  h1 {
-    margin-top: 20px;
+  .header__title {
+    margin-top: 6px;
+    margin-bottom: 17px;
+    font-size: 36px;
+    line-height: 42px;
   }
 
-  .page-header__description {
-    margin-top: 30px;
-  }
-
-  .page-header__btn {
-    margin-top: 40px;
+  .header__btn {
+    margin-top: 35px;
   }
 }
 
-h1, .section-header__title {
+.title { 
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     color: #ffffff;
 }
 
-h1 {
-    font-size: 36px;
-    line-height: 42px;
-}
-
-// Может сделать правила для текста с помощью SCSS-шаблонов?
-
-.ghost-btn {
+.btn {
   display: inline-block;
+  min-width: 141px;
   min-height: 40px;
-  padding: 15px 18px 16px 18px;
-  border: 0.5px solid #A07B50;
-  text-decoration: none;
-  color: #ffffff;
+  padding: 12px;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -91,35 +97,46 @@ h1 {
   line-height: 14px;
 }
 
+
+.btn_ghost {
+  border: 0.5px solid #A07B50;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
 .section {
-  padding-top: 60px;
-  text-align: center;
-
-  .section-header {
-    .section-header__title {
-      font-size: 28px;
-      line-height: 32px;
-    }
-
-    .section-header__description {
-      margin-top: 35px;
-    }
+  .section__container {
+    /*min-width: 290px; //TODO: решить, убрать или оставить
+    margin: 0 auto;*/
+    padding: 0 15px;
   }
 }
 
-.pet-section {
-  background-color: #1F1C1D;
+.section_light {
+  background-color: $secondary-color;
+}
 
-  .container {
-    min-width: 290px;
-    margin: 0 auto;
-    padding: 0 15px;
+.section-header {
+  .section-header__title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  
+  .section-header__description {
+    margin-top: 24px;
+  }
+}
+
+
+.pets {
+  padding-top: 54px;
 
     .gallery__menu {
-      margin-top: 40px;
+      margin-top: 31px;
 
       .gallery__menu-item {
-        margin: 0 22.5px;
+        margin: 0 21px;
         font-family: Roboto;
         font-weight: 500;
         font-size: 16px;
@@ -141,23 +158,24 @@ h1 {
     }
 
     .pet-section__slider { 
-      margin-top: 40px;
+      margin-top: 35px;
 
       .slider__content {
         position: relative;
         margin: 0 auto;
         width: 80%;
         min-height: 248px;
-        background-image: url('images/image.png');
+        filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
+        //сделать миксин
+        background-image: url('../images/image.png');
         background-repeat: no-repeat;
         background-position: center;
-        background-size: cover;
         background-clip: content-box;
 
         &::before {
           content: "";
           position: absolute;
-          left: -20px;
+          left: -27px;
           top: 47.5%;
           @extend %left-arrow;
         }
@@ -165,56 +183,309 @@ h1 {
         &::after {
           content: "";
           position: absolute;
-          right: -20px;
+          right: -27px;
           top: 47.5%;
           @extend %right-arrow;
         }
       }
-
     }
 
     .pet-section__btn {
-      margin-top: 45px;
+      margin-top: 40px;
     }
-  }
+  
 }
 
 
 .breed-section {
-  background-color: #1F1C1D;
   padding-bottom: 60px;
+  padding-top: 54px;
 
   .container {
-    min-width: 270px;
-    margin: 0 auto;
-    padding: 0 25px;
+    padding: 0 15px;
+
+    .section-header__description {         
+      margin: 24px auto 26px;
+      width: 96%;
+    }
+
+    .breed-section__image {
+        position: relative;
+        z-index: 1;
+        width: 267px;
+        margin: 0 auto;
+        margin-bottom: 49px;       
+    
+      
+        & > img {
+          max-width: 100%;
+          height: auto;
+        }
+
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: -2;
+          top: 50px;
+          left: 19px;
+          width: 230px;
+          height: 230px;
+          background-color: $main-background-color;
+          border-radius: 50%;   
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          z-index: -1;
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
+          border: 0.5px solid #A07B50;
+          left: -7px;
+          top: 25px;
+        }
+    }
   }
 }
 
-//Может стоит добавить класс и сделать этот блок универсальным?
+
 .features-list {
-  position: relative;
   list-style: none;
 
   .features-list__item {
-    margin-left: 8px;
-    margin-bottom: 30px;
+    position: relative;
+    margin: 0 18px 22px;
+  
     text-align: left;
     color: white;
 
     &::before {
       content: "";
       position: absolute;
-      top: 1792px;
-      left: 15px;
+      top: 4px;
+      left: -18px;
       width: 8px;
       height: 8px;
       border-radius: 50%;
       background-color:#A07B50;
     }
-  }
 
-  &:last-child {
-    margin-bottom : 0;
+    &:last-child {
+      margin-bottom : 0;
+    }
+
+    &:nth-child(2n) {
+      width: 165px;
+    } 
   }
 }
+
+.advantages-section {
+  padding: 55px 0 60px 0;
+
+
+  .section-header__title {
+    padding: 0 48px;
+  }
+
+  .section-header__description {
+    margin-top: 23px;
+    margin-bottom: 36px;
+  }
+
+
+  .advantages-list {
+    list-style: none;
+  }
+
+
+  .advantages-item {
+    text-align: center;
+    vertical-align: middle;
+    border: 15px solid $secondary-color;
+    margin-bottom: 30px;
+    min-height: 248px;
+    background-color: $secondary-color;
+    color: white;
+  }
+ 
+  .advantages-item_active {
+    background-color: #A07B50;
+  }
+  
+  .advantages-item__icon {
+    margin-top: 41px;
+    margin-bottom: 11px;
+  }
+
+  .icon-consultancy {
+    margin-top: 48px;
+  }
+
+  .advantages-item__text {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+
+
+.care-section {
+  padding: 55px 0 60px;
+  background-image: url("../images/care-section-mobile@2x.png");
+  background-size: cover;
+
+  .container { 
+    padding: 0 15px;
+
+    .section-header__title {
+      width: 80%;
+      margin: 0 auto;
+    }
+  
+    .care-list {
+      margin-top: 33px;
+      list-style: none;
+    }
+
+    .care-item__link {
+      position: relative;
+      display: block;
+      margin-bottom: 30px;
+      border: 0.5px solid #A07B50;
+      padding: 20px 18% 21px 25px;
+      text-align: left;
+      background: rgba(0, 0, 0, 0.3);
+
+      &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0px;
+        right: 0px;
+        width: 15.8%;
+        height: 100%;
+  
+        background-color: #A07B50;
+        border-left: 1px solid #a07b50;
+        background-image: url("../images/svg/arrowDetails.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+     }
+
+    .care-item {
+      .care-item__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 21px;
+        margin-bottom: 12px;
+
+        color: #A07B50;
+      }
+
+      .care-item__content {
+        color: white;
+      }
+    }
+
+  }
+}  
+
+.team-section {
+    padding: 54px 0 60px 0;
+
+    .container {
+      padding: 0 15px;
+
+      .section-header__title {
+        margin-bottom: 25px;
+      }
+
+      .section-header__description {
+        width: 90%;
+        margin: 0 auto;
+      }
+
+
+      .team-slider {
+        margin-top: 35px;
+        position: relative;
+
+        .team-slider__photo {
+          position: relative;
+
+          img {
+            text-align: center;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 60px;
+            top: 45.5%;
+            @extend %left-arrow;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 60px;
+            top: 45.5%;
+            @extend %right-arrow;
+          }
+        }
+    
+        .team-section__item{
+          padding-top: 65px;
+          padding-bottom: 5px;
+          margin-top: -65px;
+          background-color: $secondary-color;
+
+          .team-section__item-title {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 5px;
+          }
+
+          .team-section__item-jobTitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 135.94%;
+          }
+
+          & p {
+            margin-top: 16px;
+            color: white;
+          }
+        
+          .social {
+            margin-top: 24px;
+            list-style: none;
+
+            .social__item {
+              display: inline-block;
+              min-width: 18px;
+              margin-right: 6px;
+
+              .social__link span {
+                font-size: 0;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          } 
+        }   
+      }
+    }
+  }
