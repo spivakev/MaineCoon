@@ -108,7 +108,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Для Opera */
 }
 
-body {
+.page {
   font-family: Roboto;
   font-size: 14px;
   font-style: normal;
@@ -118,40 +118,41 @@ body {
   text-align: center;
 }
 
-.page-header {
+.page__header {
   padding-top: 28px;
   padding-bottom: 276px;
-  text-align: center;
-  font-weight: 400;
+}
+
+.header {
   background-color: #181617;
   background-image: url("../images/header-cat-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: right  bottom;
+  font-weight: 400;
 }
 
-.page-header .container {
-  min-width: 240px;
+.header .header__container {
   margin: 0 auto;
   padding: 0 40px;
+  min-width: 240px;
 }
 
-.page-header .page-header__city {
+.header .header__city {
   margin-top: 53px;
 }
 
-.page-header .page-header__title {
-  text-align: center;
+.header .header__title {
   margin-top: 6px;
   margin-bottom: 17px;
   font-size: 36px;
   line-height: 42px;
 }
 
-.page-header .page-header__btn {
+.header .header__btn {
   margin-top: 35px;
 }
 
-.page-header__title, .section-header__title {
+.header__title, .section-header__title {
   font-family: 'Yeseva One', cursive;
   font-weight: normal;
   color: #ffffff;
@@ -162,19 +163,22 @@ body {
   line-height: 32px;
 }
 
-.ghost-btn {
+.btn {
   display: inline-block;
   min-width: 141px;
   min-height: 40px;
   padding: 12px;
-  border: 0.5px solid #A07B50;
-  text-decoration: none;
-  color: #ffffff;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
   line-height: 14px;
+}
+
+.btn_ghost {
+  border: 0.5px solid #A07B50;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .pet-section {
