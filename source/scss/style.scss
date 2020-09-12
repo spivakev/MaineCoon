@@ -79,7 +79,7 @@ $teriary-color: $x-dark-gray;
   }
 }
 
-.title {  //ТОDO: или лучше .section-title?
+.title { 
     font-family: 'Yeseva One', cursive;
     font-weight: normal;
     color: #ffffff;
@@ -113,6 +113,10 @@ $teriary-color: $x-dark-gray;
   }
 }
 
+.section_light {
+  background-color: $secondary-color;
+}
+
 .section-header {
   .section-header__title {
     font-size: 28px;
@@ -122,14 +126,6 @@ $teriary-color: $x-dark-gray;
   .section-header__description {
     margin-top: 24px;
   }
-}
-
-.section_dark {
-  background-color: $primary-color;
-}
-
-.section_light {
-  background-color: $secondary-color;
 }
 
 
