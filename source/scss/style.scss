@@ -387,39 +387,82 @@ body {
         margin: 0 auto;
       }
 
-      .team-section__item{
-        .team-section__item-title {
-          font-style: normal;
-          font-weight: 500;
-          font-size: 18px;
-          line-height: 21px;
-        }
 
-        .team-section__item-jobTitle {
-          font-style: normal;
-          font-weight: normal;
-          font-size: 14px;
-          line-height: 135.94%;
-        }
+      .team-slider {
+        margin-top: 35px;
+        position: relative;
 
-        & p {
-          color: white;
-        }
-      }
+        .team-slider__photo {
+          position: relative;
 
-
-      .social {
-        list-style: none;
-
-        .social__item {
-          display: inline-block;
-          min-width: 15px;
-
-          .social__link span {
-            font-size: 0;
+          img {
+            text-align: center;
           }
+
+          &::before {
+            content: "";
+            position: absolute;
+            left: 60px;
+            top: 45.5%;
+            @extend %left-arrow;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            right: 60px;
+            top: 45.5%;
+            @extend %right-arrow;
+          }
+        }
+    
+        .team-section__item{
+          padding-top: 65px;
+          padding-bottom: 5px;
+          margin-top: -65px;
+          background-color: #1F1C1D;
+
+          .team-section__item-title {
+            margin-top: 20px;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 21px;
+            margin-bottom: 5px;
+          }
+
+          .team-section__item-jobTitle {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 135.94%;
+          }
+
+          & p {
+            margin-top: 16px;
+            color: white;
+          }
+        
+          .social {
+            margin-top: 24px;
+            list-style: none;
+
+            .social__item {
+              display: inline-block;
+              min-width: 18px;
+              margin-right: 6px;
+
+              .social__link span {
+                font-size: 0;
+              }
+            }
+
+            &:last-child {
+              margin-right: 0;
+            }
+          } 
+        }   
       }
-    }
 
     }
   }
