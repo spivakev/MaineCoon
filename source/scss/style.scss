@@ -46,13 +46,13 @@ $teriary-color: $x-dark-gray;
   line-height: 140%;
   color: #A07B50; //TODO: сделать белый основным цветом
   text-align: center;
-}
 
-.page__header {
-  padding-top: 28px;
-  padding-bottom: 276px;
-}
 
+  .page__header {
+    padding-top: 28px;
+    padding-bottom: 276px;
+  }
+}
 
 .header {
   background-color: $teriary-color;
@@ -89,6 +89,7 @@ $teriary-color: $x-dark-gray;
   color: #ffffff;
 }
 
+
 .btn {
   display: inline-block;
   min-width: 141px;
@@ -100,7 +101,6 @@ $teriary-color: $x-dark-gray;
   font-size: 12px;
   line-height: 14px;
 }
-
 
 .btn_ghost {
   border: 0.5px solid #A07B50;
@@ -139,73 +139,80 @@ $teriary-color: $x-dark-gray;
 .pets {
   padding-bottom: 0;
 
-  .gallery__menu {
+  .pets__menu {
     margin-top: 31px;
-
-    .gallery__menu-item {
-      margin: 0 21px;
-      font-family: Roboto;
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 19px;
-      color: rgba(255, 255, 255, 0.2);
-
-      &.gallery__menu-item_active {
-        color: rgba(255, 255, 255, 1);
-      }
-
-      &:first-child {
-        margin-left: 0;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
   }
 
-  .pet-section__slider {
+  .pets__slider {
     margin-top: 35px;
-
-    .slider__content {
-      position: relative;
-      margin: 0 auto;
-      width: 80%;
-      min-height: 248px;
-      filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
-      //сделать миксин
-      background-image: url('../images/image.png');
-      background-repeat: no-repeat;
-      background-position: center;
-      background-clip: content-box;
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: -27px;
-        top: 47.5%;
-        @extend %left-arrow;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: -27px;
-        top: 47.5%;
-        @extend %right-arrow;
-      }
-    }
   }
 
   .pet-section__btn {
     margin-top: 40px;
   }
+}
 
+.menu {
+  list-style: none;
+
+  .menu__item {
+    display: inline-block;
+    margin: 0 21px;
+  }
+
+  .menu__item:first-child {
+    margin-left: 0;
+  }
+
+  .menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .menu__link {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  .menu__link_active {
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+
+.slider__content {
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  min-height: 248px;
+  filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
+  //сделать миксин
+  background-image: url('../images/image.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: content-box;
+}
+
+.slider__content::before {
+  content: "";
+  position: absolute;
+  left: -27px;
+  top: 47.5%;
+  @extend %left-arrow;
+}
+
+.slider__content::after {
+  content: "";
+  position: absolute;
+  right: -27px;
+  top: 47.5%;
+  @extend %right-arrow;
 }
 
 
 .breed-section {
-
   .section-header__description {
     margin: 24px auto 26px;
     width: 96%;
@@ -232,7 +239,7 @@ $teriary-color: $x-dark-gray;
       left: 19px;
       width: 230px;
       height: 230px;
-      background-color: $main-background-color;
+      background-color: $primary-color;
       border-radius: 50%;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
@@ -284,7 +291,6 @@ $teriary-color: $x-dark-gray;
 }
 
 .advantages-section {
-
   .section-header__title {
     padding: 0 48px;
   }
@@ -390,7 +396,7 @@ $teriary-color: $x-dark-gray;
 }
 
 .team-section {
-  
+
   .section-header__title {
     margin-bottom: 25px;
   }
