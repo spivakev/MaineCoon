@@ -291,33 +291,35 @@ $teriary-color: $x-dark-gray;
   }
 }
 
+.advantages {
+  .advantages__title {
+    margin: 0 auto;
+    max-width: 230px;
+  }
 
-.advantages__title {
-  margin: 0 auto;
-  max-width: 230px;
+  .advantages__description {
+    margin-bottom: 36px;
+  }
+
+  .advantages__icon-consultancy {
+    margin-top: 48px;
+  }
 }
-
-.advantages__description {
-  margin-bottom: 36px;
-}
-
-.advantages__icon-consultancy {
-  margin-top: 48px;
-}
-
 
 .advantages-list {
-  //плохое имя для блока 
+  //плохое имя для блока (не универсальное)
   list-style: none;
 }
 
 .advantages-list__item {
-  text-align: center;
-  vertical-align: middle;
-  border: 15px solid $secondary-color;
   margin-bottom: 30px;
   min-height: 248px;
   background-color: $secondary-color;
+  border: 15px solid $secondary-color;
+  text-align: center;
+}
+
+.advantages-list__link {
   color: white;
 }
 

@@ -348,16 +348,16 @@ h1, h2, h3, h4, h5, h6 {
   width: 165px;
 }
 
-.advantages__title {
+.advantages .advantages__title {
   margin: 0 auto;
   max-width: 230px;
 }
 
-.advantages__description {
+.advantages .advantages__description {
   margin-bottom: 36px;
 }
 
-.advantages__icon-consultancy {
+.advantages .advantages__icon-consultancy {
   margin-top: 48px;
 }
 
@@ -366,12 +366,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages-list__item {
-  text-align: center;
-  vertical-align: middle;
-  border: 15px solid #1F1C1D;
   margin-bottom: 30px;
   min-height: 248px;
   background-color: #1F1C1D;
+  border: 15px solid #1F1C1D;
+  text-align: center;
+}
+
+.advantages-list__link {
   color: white;
 }
 
