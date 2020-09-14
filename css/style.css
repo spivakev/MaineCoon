@@ -348,20 +348,24 @@ h1, h2, h3, h4, h5, h6 {
   width: 165px;
 }
 
-.advantages-section .section-header__title {
-  padding: 0 48px;
+.advantages__title {
+  margin: 0 auto;
+  max-width: 230px;
 }
 
-.advantages-section .section-header__description {
-  margin-top: 23px;
+.advantages__description {
   margin-bottom: 36px;
 }
 
-.advantages-section .advantages-list {
+.advantages__icon-consultancy {
+  margin-top: 48px;
+}
+
+.advantages-list {
   list-style: none;
 }
 
-.advantages-section .advantages-item {
+.advantages-list__item {
   text-align: center;
   vertical-align: middle;
   border: 15px solid #1F1C1D;
@@ -371,40 +375,36 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.advantages-section .advantages-item_active {
+.advantages-list__item_active {
   background-color: #A07B50;
 }
 
-.advantages-section .advantages-item__icon {
+.advantages-list__icon {
   margin-top: 41px;
   margin-bottom: 11px;
 }
 
-.advantages-section .icon-consultancy {
-  margin-top: 48px;
-}
-
-.advantages-section .advantages-item__text {
+.advantages-list__text {
   width: 80%;
   margin: 0 auto;
 }
 
-.care-section {
+.care {
   background-image: url("../images/care-section-mobile@2x.png");
   background-size: cover;
 }
 
-.care-section .section-header__title {
+.care .section-header__title {
   width: 80%;
   margin: 0 auto;
 }
 
-.care-section .care-list {
+.care .care-list {
   margin-top: 33px;
   list-style: none;
 }
 
-.care-section .care-item__link {
+.care .care-item__link {
   position: relative;
   display: block;
   margin-bottom: 30px;
@@ -414,7 +414,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.care-section .care-item__link::after {
+.care .care-item__link::after {
   content: "";
   position: absolute;
   display: block;
@@ -429,7 +429,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
 }
 
-.care-section .care-item .care-item__title {
+.care .care-item .care-item__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -439,7 +439,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #A07B50;
 }
 
-.care-section .care-item .care-item__content {
+.care .care-item .care-item__content {
   color: white;
 }
 

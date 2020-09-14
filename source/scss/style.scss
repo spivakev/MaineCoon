@@ -292,54 +292,51 @@ $teriary-color: $x-dark-gray;
 }
 
 
-.advantages-section {
-  .section-header__title {
-    padding: 0 48px;
-  }
+.advantages__title {
+  margin: 0 auto;
+  max-width: 230px;
+}
 
-  .section-header__description {
-    margin-top: 23px;
-    margin-bottom: 36px;
-  }
+.advantages__description {
+  margin-bottom: 36px;
+}
 
-
-  .advantages-list {
-    list-style: none;
-  }
-
-
-  .advantages-item {
-    text-align: center;
-    vertical-align: middle;
-    border: 15px solid $secondary-color;
-    margin-bottom: 30px;
-    min-height: 248px;
-    background-color: $secondary-color;
-    color: white;
-  }
-
-  .advantages-item_active {
-    background-color: #A07B50;
-  }
-
-  .advantages-item__icon {
-    margin-top: 41px;
-    margin-bottom: 11px;
-  }
-
-  .icon-consultancy {
-    margin-top: 48px;
-  }
-
-  .advantages-item__text {
-    width: 80%;
-    margin: 0 auto;
-  }
+.advantages__icon-consultancy {
+  margin-top: 48px;
 }
 
 
+.advantages-list {
+  //плохое имя для блока 
+  list-style: none;
+}
 
-.care-section {
+.advantages-list__item {
+  text-align: center;
+  vertical-align: middle;
+  border: 15px solid $secondary-color;
+  margin-bottom: 30px;
+  min-height: 248px;
+  background-color: $secondary-color;
+  color: white;
+}
+
+.advantages-list__item_active {
+  background-color: #A07B50;
+}
+
+.advantages-list__icon {
+  margin-top: 41px;
+  margin-bottom: 11px;
+}
+
+.advantages-list__text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+.care {
   background-image: url("../images/care-section-mobile@2x.png");
   background-size: cover;
 
