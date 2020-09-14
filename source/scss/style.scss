@@ -132,6 +132,7 @@ $teriary-color: $x-dark-gray;
 
   .section-header__description {
     margin-top: 24px;
+    margin: 24px auto 0;
   }
 }
 
@@ -212,49 +213,49 @@ $teriary-color: $x-dark-gray;
 }
 
 
-.breed-section {
-  .section-header__description {
-    margin: 24px auto 26px;
+.breed-features {
+  .breed-features__description {
+    margin-bottom: 26px;
     width: 96%;
   }
 
-  .breed-section__image {
+  .breed-features__image {
     position: relative;
     z-index: 1;
     width: 267px;
     margin: 0 auto;
     margin-bottom: 49px;
+  }
 
+  .breed-features__image>img {
+    //убрать | переименовать | переместить в reset?
+    max-width: 100%;
+    height: auto;
+  }
 
-    &>img {
-      max-width: 100%;
-      height: auto;
-    }
+  .breed-features__image::before {
+    content: "";
+    position: absolute;
+    z-index: -2;
+    top: 50px;
+    left: 19px;
+    width: 230px;
+    height: 230px;
+    background-color: $primary-color;
+    border-radius: 50%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      z-index: -2;
-      top: 50px;
-      left: 19px;
-      width: 230px;
-      height: 230px;
-      background-color: $primary-color;
-      border-radius: 50%;
-      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      z-index: -1;
-      width: 280px;
-      height: 280px;
-      border-radius: 50%;
-      border: 0.5px solid #A07B50;
-      left: -7px;
-      top: 25px;
-    }
+  .breed-features__image::after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    border: 0.5px solid #A07B50;
+    left: -7px;
+    top: 25px;
   }
 }
 
@@ -268,27 +269,28 @@ $teriary-color: $x-dark-gray;
 
     text-align: left;
     color: white;
+  }
 
-    &::before {
-      content: "";
-      position: absolute;
-      top: 4px;
-      left: -18px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: #A07B50;
-    }
+  .features-list__item::before {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: -18px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #A07B50;
+  }
 
-    &:last-child {
-      margin-bottom: 0;
-    }
+  .features-list__item:last-child {
+    margin-bottom: 0;
+  }
 
-    &:nth-child(2n) {
-      width: 165px;
-    }
+  .features-list__item:nth-child(2n) {
+    width: 165px;
   }
 }
+
 
 .advantages-section {
   .section-header__title {

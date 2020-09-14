@@ -199,6 +199,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .section-header .section-header__description {
   margin-top: 24px;
+  margin: 24px auto 0;
 }
 
 .pets {
@@ -273,12 +274,12 @@ h1, h2, h3, h4, h5, h6 {
   top: 47.5%;
 }
 
-.breed-section .section-header__description {
-  margin: 24px auto 26px;
+.breed-features .breed-features__description {
+  margin-bottom: 26px;
   width: 96%;
 }
 
-.breed-section .breed-section__image {
+.breed-features .breed-features__image {
   position: relative;
   z-index: 1;
   width: 267px;
@@ -286,12 +287,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 49px;
 }
 
-.breed-section .breed-section__image > img {
+.breed-features .breed-features__image > img {
   max-width: 100%;
   height: auto;
 }
 
-.breed-section .breed-section__image::before {
+.breed-features .breed-features__image::before {
   content: "";
   position: absolute;
   z-index: -2;
@@ -305,7 +306,7 @@ h1, h2, h3, h4, h5, h6 {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.breed-section .breed-section__image::after {
+.breed-features .breed-features__image::after {
   content: "";
   position: absolute;
   z-index: -1;
