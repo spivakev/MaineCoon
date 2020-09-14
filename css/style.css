@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.slider__content::before, .team-section .team-slider .team-slider__photo::before {
+.slider__content::before, .team .team__slider .team__photo::before {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Для Opera */
 }
 
-.slider__content::after, .team-section .team-slider .team-slider__photo::after {
+.slider__content::after, .team .team__slider .team__photo::after {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -195,6 +195,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-header .section-header__title {
   font-size: 28px;
   line-height: 32px;
+  margin: 0 auto;
 }
 
 .section-header .section-header__description {
@@ -349,7 +350,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .advantages .advantages__title {
-  margin: 0 auto;
   max-width: 230px;
 }
 
@@ -396,17 +396,16 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
 }
 
-.care .section-header__title {
+.care .care__title {
   width: 80%;
-  margin: 0 auto;
+  margin-bottom: 33px;
 }
 
 .care .care-list {
-  margin-top: 33px;
   list-style: none;
 }
 
-.care .care-item__link {
+.care .care-list__link {
   position: relative;
   display: block;
   margin-bottom: 30px;
@@ -416,7 +415,7 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.care .care-item__link::after {
+.care .care-list__link::after {
   content: "";
   position: absolute;
   display: block;
@@ -431,7 +430,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: center;
 }
 
-.care .care-item .care-item__title {
+.care .care-list__title {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
@@ -441,54 +440,54 @@ h1, h2, h3, h4, h5, h6 {
   color: #A07B50;
 }
 
-.care .care-item .care-item__content {
+.care .care-list__content {
   color: white;
 }
 
-.team-section .section-header__title {
+.team .section-header__title {
   margin-bottom: 25px;
 }
 
-.team-section .section-header__description {
+.team .section-header__description {
   width: 90%;
   margin: 0 auto;
 }
 
-.team-section .team-slider {
+.team .team__slider {
   margin-top: 35px;
   position: relative;
 }
 
-.team-section .team-slider .team-slider__photo {
+.team .team__slider .team__photo {
   position: relative;
 }
 
-.team-section .team-slider .team-slider__photo img {
+.team .team__slider .team__photo img {
   text-align: center;
 }
 
-.team-section .team-slider .team-slider__photo::before {
+.team .team__slider .team__photo::before {
   content: "";
   position: absolute;
   left: 60px;
   top: 45.5%;
 }
 
-.team-section .team-slider .team-slider__photo::after {
+.team .team__slider .team__photo::after {
   content: "";
   position: absolute;
   right: 60px;
   top: 45.5%;
 }
 
-.team-section .team-slider .team-section__item {
+.team .team__slider .team__item {
   padding-top: 65px;
   padding-bottom: 5px;
   margin-top: -65px;
   background-color: #1F1C1D;
 }
 
-.team-section .team-slider .team-section__item .team-section__item-title {
+.team .team__slider .team__item .team__item-title {
   margin-top: 20px;
   font-style: normal;
   font-weight: 500;
@@ -497,34 +496,34 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
 }
 
-.team-section .team-slider .team-section__item .team-section__item-jobTitle {
+.team .team__slider .team__item .team__item-jobTitle {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 135.94%;
 }
 
-.team-section .team-slider .team-section__item p {
+.team .team__slider .team__item .team__item-content {
   margin-top: 16px;
   color: white;
 }
 
-.team-section .team-slider .team-section__item .social {
+.team .team__slider .team__item .social {
   margin-top: 24px;
   list-style: none;
 }
 
-.team-section .team-slider .team-section__item .social .social__item {
+.team .team__slider .team__item .social .social__item {
   display: inline-block;
   min-width: 18px;
   margin-right: 6px;
 }
 
-.team-section .team-slider .team-section__item .social .social__item .social__link span {
+.team .team__slider .team__item .social .social__item .social__link span {
   font-size: 0;
 }
 
-.team-section .team-slider .team-section__item .social:last-child {
+.team .team__slider .team__item .social:last-child {
   margin-right: 0;
 }
 /*# sourceMappingURL=style.css.map */

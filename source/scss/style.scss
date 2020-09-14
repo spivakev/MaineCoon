@@ -128,6 +128,7 @@ $teriary-color: $x-dark-gray;
   .section-header__title {
     font-size: 28px;
     line-height: 32px;
+    margin: 0 auto;
   }
 
   .section-header__description {
@@ -189,7 +190,6 @@ $teriary-color: $x-dark-gray;
   width: 80%;
   min-height: 248px;
   filter: drop-shadow(0px 0px 30px rgba(3, 3, 3, 0.15));
-  //сделать миксин
   background-image: url('../images/image.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -293,7 +293,6 @@ $teriary-color: $x-dark-gray;
 
 .advantages {
   .advantages__title {
-    margin: 0 auto;
     max-width: 230px;
   }
 
@@ -307,7 +306,6 @@ $teriary-color: $x-dark-gray;
 }
 
 .advantages-list {
-  //плохое имя для блока (не универсальное)
   list-style: none;
 }
 
@@ -342,17 +340,16 @@ $teriary-color: $x-dark-gray;
   background-image: url("../images/care-section-mobile@2x.png");
   background-size: cover;
 
-  .section-header__title {
+  .care__title {
     width: 80%;
-    margin: 0 auto;
+    margin-bottom: 33px;
   }
 
   .care-list {
-    margin-top: 33px;
     list-style: none;
   }
 
-  .care-item__link {
+  .care-list__link {
     position: relative;
     display: block;
     margin-bottom: 30px;
@@ -360,43 +357,42 @@ $teriary-color: $x-dark-gray;
     padding: 20px 18% 21px 25px;
     text-align: left;
     background: rgba(0, 0, 0, 0.3);
-
-    &::after {
-      content: "";
-      position: absolute;
-      display: block;
-      top: 0px;
-      right: 0px;
-      width: 15.8%;
-      height: 100%;
-
-      background-color: #A07B50;
-      border-left: 1px solid #a07b50;
-      background-image: url("../images/svg/arrowDetails.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
   }
 
-  .care-item {
-    .care-item__title {
-      font-family: Roboto;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 21px;
-      margin-bottom: 12px;
+  .care-list__link::after {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0px;
+    right: 0px;
+    width: 15.8%;
+    height: 100%;
 
-      color: #A07B50;
-    }
+    background-color: #A07B50;
+    border-left: 1px solid #a07b50;
+    background-image: url("../images/svg/arrowDetails.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 
-    .care-item__content {
-      color: white;
-    }
+  .care-list__title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 12px;
+
+    color: #A07B50;
+  }
+
+  .care-list__content {
+    color: white;
   }
 }
 
-.team-section {
+
+.team {
 
   .section-header__title {
     margin-bottom: 25px;
@@ -408,41 +404,41 @@ $teriary-color: $x-dark-gray;
   }
 
 
-  .team-slider {
+  .team__slider {
     margin-top: 35px;
     position: relative;
 
-    .team-slider__photo {
+    .team__photo {
       position: relative;
 
       img {
         text-align: center;
       }
-
-      &::before {
-        content: "";
-        position: absolute;
-        left: 60px;
-        top: 45.5%;
-        @extend %left-arrow;
-      }
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 60px;
-        top: 45.5%;
-        @extend %right-arrow;
-      }
     }
 
-    .team-section__item {
+    .team__photo::before {
+      content: "";
+      position: absolute;
+      left: 60px;
+      top: 45.5%;
+      @extend %left-arrow;
+    }
+
+    .team__photo::after {
+      content: "";
+      position: absolute;
+      right: 60px;
+      top: 45.5%;
+      @extend %right-arrow;
+    }
+
+    .team__item {
       padding-top: 65px;
       padding-bottom: 5px;
       margin-top: -65px;
       background-color: $secondary-color;
 
-      .team-section__item-title {
+      .team__item-title {
         margin-top: 20px;
         font-style: normal;
         font-weight: 500;
@@ -451,14 +447,14 @@ $teriary-color: $x-dark-gray;
         margin-bottom: 5px;
       }
 
-      .team-section__item-jobTitle {
+      .team__item-jobTitle {
         font-style: normal;
         font-weight: normal;
         font-size: 14px;
         line-height: 135.94%;
       }
 
-      & p {
+      .team__item-content {
         margin-top: 16px;
         color: white;
       }
