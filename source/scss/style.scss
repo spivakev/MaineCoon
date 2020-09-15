@@ -291,6 +291,7 @@ $teriary-color: $x-dark-gray;
   }
 }
 
+
 .advantages {
   .advantages__title {
     max-width: 230px;
@@ -393,90 +394,151 @@ $teriary-color: $x-dark-gray;
 
 
 .team {
-
-  .section-header__title {
+  .team__title {
     margin-bottom: 25px;
   }
 
-  .section-header__description {
+  .team__description {
     width: 90%;
-    margin: 0 auto;
   }
-
 
   .team__slider {
     margin-top: 35px;
     position: relative;
+  }
 
-    .team__photo {
-      position: relative;
+  .team__photo {
+    position: relative;
 
-      img {
-        text-align: center;
-      }
+    img {
+      text-align: center;
     }
+  }
 
-    .team__photo::before {
-      content: "";
-      position: absolute;
-      left: 60px;
-      top: 45.5%;
-      @extend %left-arrow;
+  .team__photo::before {
+    content: "";
+    position: absolute;
+    left: 60px;
+    top: 45.5%;
+    @extend %left-arrow;
+  }
+
+  .team__photo::after {
+    content: "";
+    position: absolute;
+    right: 60px;
+    top: 45.5%;
+    @extend %right-arrow;
+  }
+
+  .team__item {
+    padding-top: 65px;
+    padding-bottom: 5px;
+    margin-top: -65px;
+    background-color: $secondary-color;
+  }
+
+  .team__item-title {
+    margin-top: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .team__item-jobTitle {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 135.94%;
+  }
+
+  .team__item-content {
+    margin-top: 16px;
+    color: white;
+  }
+
+  .team__social {
+    margin-top: 24px;
+  }
+}
+
+.social {
+  list-style: none;
+
+  .social__item {
+    display: inline-block;
+    min-width: 18px;
+    margin-right: 6px;
+
+    .social__link span {
+      font-size: 0;
     }
+  }
+}
 
-    .team__photo::after {
-      content: "";
-      position: absolute;
-      right: 60px;
-      top: 45.5%;
-      @extend %right-arrow;
-    }
+.social:last-child {
+  margin-right: 0;
+}
 
-    .team__item {
-      padding-top: 65px;
-      padding-bottom: 5px;
-      margin-top: -65px;
-      background-color: $secondary-color;
 
-      .team__item-title {
-        margin-top: 20px;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 21px;
-        margin-bottom: 5px;
-      }
+.faq {
+  .faq__description {
+    max-width: 190px;
+  }
 
-      .team__item-jobTitle {
-        font-style: normal;
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 135.94%;
-      }
+  .faq__list {
+    margin-top: 36px;
+  }
 
-      .team__item-content {
-        margin-top: 16px;
-        color: white;
-      }
+  .faq__question {
+    position: relative;
+    display: block;
+    font-weight: bold;
+    padding: 10px 17px 11px 15px;
+  }
 
-      .social {
-        margin-top: 24px;
-        list-style: none;
+  .faq__question::-webkit-details-marker {
+    display: none;
+  }
 
-        .social__item {
-          display: inline-block;
-          min-width: 18px;
-          margin-right: 6px;
+  .faq__question_open::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14.7%;
+    height: 100%;
+    background-color: #A07B50;
+    background-image: url("../images/svg/openedQuestion.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-left: 0.5px solid #A07B50;
+  }
 
-          .social__link span {
-            font-size: 0;
-          }
-        }
+  .faq__question-text {
+    max-width: 90%;
+  }
 
-        &:last-child {
-          margin-right: 0;
-        }
-      }
-    }
+  .faq__question,
+  .faq__answer {
+    border: 0.5px solid #A07B50; //#544332;
+    color: #DDD0C3;
+    text-align: left;
+  }
+
+  .faq__answer {
+    border-top: none;
+    padding: 10px 17px 12px 15px;
+  }
+
+  .faq__paragraph {
+    margin-bottom: 15px;
+  }
+
+  .faq__paragraph:last-of-type {
+    margin-bottom: 0;
   }
 }

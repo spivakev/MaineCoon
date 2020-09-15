@@ -70,7 +70,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
-.slider__content::before, .team .team__slider .team__photo::before {
+.slider__content::before, .team .team__photo::before {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   /* Для Opera */
 }
 
-.slider__content::after, .team .team__slider .team__photo::after {
+.slider__content::after, .team .team__photo::after {
   width: 12px;
   height: 12px;
   border: solid #A07B50;
@@ -444,13 +444,12 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.team .section-header__title {
+.team .team__title {
   margin-bottom: 25px;
 }
 
-.team .section-header__description {
+.team .team__description {
   width: 90%;
-  margin: 0 auto;
 }
 
 .team .team__slider {
@@ -458,36 +457,36 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.team .team__slider .team__photo {
+.team .team__photo {
   position: relative;
 }
 
-.team .team__slider .team__photo img {
+.team .team__photo img {
   text-align: center;
 }
 
-.team .team__slider .team__photo::before {
+.team .team__photo::before {
   content: "";
   position: absolute;
   left: 60px;
   top: 45.5%;
 }
 
-.team .team__slider .team__photo::after {
+.team .team__photo::after {
   content: "";
   position: absolute;
   right: 60px;
   top: 45.5%;
 }
 
-.team .team__slider .team__item {
+.team .team__item {
   padding-top: 65px;
   padding-bottom: 5px;
   margin-top: -65px;
   background-color: #1F1C1D;
 }
 
-.team .team__slider .team__item .team__item-title {
+.team .team__item-title {
   margin-top: 20px;
   font-style: normal;
   font-weight: 500;
@@ -496,34 +495,95 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 5px;
 }
 
-.team .team__slider .team__item .team__item-jobTitle {
+.team .team__item-jobTitle {
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 135.94%;
 }
 
-.team .team__slider .team__item .team__item-content {
+.team .team__item-content {
   margin-top: 16px;
   color: white;
 }
 
-.team .team__slider .team__item .social {
+.team .team__social {
   margin-top: 24px;
+}
+
+.social {
   list-style: none;
 }
 
-.team .team__slider .team__item .social .social__item {
+.social .social__item {
   display: inline-block;
   min-width: 18px;
   margin-right: 6px;
 }
 
-.team .team__slider .team__item .social .social__item .social__link span {
+.social .social__item .social__link span {
   font-size: 0;
 }
 
-.team .team__slider .team__item .social:last-child {
+.social:last-child {
   margin-right: 0;
+}
+
+.faq .faq__description {
+  max-width: 190px;
+}
+
+.faq .faq__list {
+  margin-top: 36px;
+}
+
+.faq .faq__question {
+  position: relative;
+  display: block;
+  font-weight: bold;
+  padding: 10px 17px 11px 15px;
+}
+
+.faq .faq__question::-webkit-details-marker {
+  display: none;
+}
+
+.faq .faq__question_open::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 14.7%;
+  height: 100%;
+  background-color: #A07B50;
+  background-image: url("../images/svg/openedQuestion.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 0;
+  border-left: 0.5px solid #A07B50;
+}
+
+.faq .faq__question-text {
+  max-width: 90%;
+}
+
+.faq .faq__question,
+.faq .faq__answer {
+  border: 0.5px solid #A07B50;
+  color: #DDD0C3;
+  text-align: left;
+}
+
+.faq .faq__answer {
+  border-top: none;
+  padding: 10px 17px 12px 15px;
+}
+
+.faq .faq__paragraph {
+  margin-bottom: 15px;
+}
+
+.faq .faq__paragraph:last-of-type {
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
