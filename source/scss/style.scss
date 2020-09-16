@@ -39,7 +39,9 @@ $teriary-color: $x-dark-gray;
 
 .page {
   background-color: $primary-color;
-  font-family: Roboto;
+  font-family: "Roboto",
+    "Arial",
+    sans-serif;
   font-size: 14px;
   font-style: normal;
   font-weight: 300;
@@ -393,6 +395,36 @@ $teriary-color: $x-dark-gray;
 }
 
 
+.slider {
+
+  .slider__item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .slider__item-content {
+    color: rgba(255, 255, 255, 0.72); //общее
+  }
+
+  .slider__photo::before {
+    content: "";
+    position: absolute;
+    top: 45.5%;
+    @extend %left-arrow;
+  }
+
+  .slider__photo::after {
+    content: "";
+    position: absolute;
+    top: 45.5%;
+    @extend %right-arrow;
+  }
+
+}
+
+
 .team {
   .team__title {
     margin-bottom: 25px;
@@ -416,34 +448,22 @@ $teriary-color: $x-dark-gray;
   }
 
   .team__photo::before {
-    content: "";
-    position: absolute;
     left: 60px;
-    top: 45.5%;
-    @extend %left-arrow;
   }
 
   .team__photo::after {
-    content: "";
-    position: absolute;
     right: 60px;
-    top: 45.5%;
-    @extend %right-arrow;
   }
 
   .team__item {
     padding-top: 65px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
     margin-top: -65px;
     background-color: $secondary-color;
   }
 
   .team__item-title {
     margin-top: 20px;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
     margin-bottom: 5px;
   }
 
@@ -455,22 +475,37 @@ $teriary-color: $x-dark-gray;
   }
 
   .team__item-content {
-    margin-top: 16px;
+    margin-top: 17px;
     color: rgba(255, 255, 255, 0.72);
   }
 
   .team__social {
     margin-top: 24px;
   }
+
+  .team__icon {
+    fill: white;
+  }
 }
 
 .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  overflow: hidden;
   list-style: none;
 
   .social__item {
     display: inline-block;
     min-width: 18px;
     margin-right: 6px;
+
+    .social__link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
 
     .social__link span {
       font-size: 0;
@@ -582,54 +617,97 @@ $teriary-color: $x-dark-gray;
   }
 
   .reviews__photo::before {
-    left: 2px; //разное
+    left: 2px;
   }
 
   .reviews__photo::after {
-    right: 2px; //разное
+    right: 2px;
   }
 
   .reviews__item {
-    padding: 85px 30px 40px; //разное
+    padding: 85px 30px 40px;
     margin-top: -85px;
     background-color: $teriary-color;
   }
 
   .reviews__item-title {
     margin-top: 31px;
-    color: white; //особенность review
+    color: white;
   }
 
   .reviews__item-content {
     margin-top: 17px;
   }
+
+  .reviews__footer {
+    margin: 22px auto 0;
+  }
+
+  .reviews__content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .reviews__date {
+    display: inline-block;
+    margin-right: 39px;
+    font-size: 12px;
+    line-height: 2.5;
+  }
+
+  .reviews__social {
+    display: inline-block;
+  }
+
+  .reviews__social-item {
+    margin-right: 12px;
+  }
+
+  .reviews__social-item:last-of-type {
+    margin-right: 0;
+  }
+
+  .reviews__social-link {
+    border: 0.5px solid rgba(160, 123, 80, 0.27);
+    width: 28px;
+    height: 28px;
+  }
+
+  .reviews__icon {
+    fill: #a07b50;
+    margin: 0 auto;
+  }
+
 }
 
-.slider {
 
-  .slider__item-title {
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 21px;
+.footer {
+  padding: 35px 28px;
+
+  .footer__address {
+    margin-bottom: 11px;
+    color: #D6CCC2;
   }
 
-  .slider__photo::before {
-    content: "";
-    position: absolute;
-    top: 45.5%;
-    @extend %left-arrow;
+  .footer__phone {
+    color: #FDF2E6;
   }
 
-  .slider__photo::after {
-    content: "";
-    position: absolute;
-    top: 45.5%;
-    @extend %right-arrow;
+  .footer__social {
+    margin-top: 18px;
+    margin-bottom: 23px;
   }
 
-  .slider__item-content {
-    color: rgba(255, 255, 255, 0.72); //общее
+  .footer__icon {
+    fill: #a07b50;
   }
 
+  .footer__social-item {
+    margin-right: 20px;
+  }
+
+  .footer__social-item:last-of-type {
+    margin-right: 0;
+  }
 }
