@@ -456,7 +456,7 @@ $teriary-color: $x-dark-gray;
 
   .team__item-content {
     margin-top: 16px;
-    color: white;
+    color: rgba(255, 255, 255, 0.72);
   }
 
   .team__social {
@@ -490,6 +490,14 @@ $teriary-color: $x-dark-gray;
 
   .faq__list {
     margin-top: 36px;
+
+    .faq__item {
+      margin-bottom: 30px;
+    }
+
+    .faq__item:last-of-type {
+      margin-bottom: 0px;
+    }
   }
 
   .faq__question {
@@ -501,6 +509,20 @@ $teriary-color: $x-dark-gray;
 
   .faq__question::-webkit-details-marker {
     display: none;
+  }
+
+  .faq__question::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 14.7%;
+    height: 100%;
+    background-image: url("../images/svg/closedQuestion.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 0;
+    border-left: 0.5px solid #A07B50;
   }
 
   .faq__question_open::after {
@@ -541,4 +563,73 @@ $teriary-color: $x-dark-gray;
   .faq__paragraph:last-of-type {
     margin-bottom: 0;
   }
+}
+
+
+.reviews {
+
+  .reviews__slider {
+    margin-top: 53px;
+    position: relative; //перенести в класс слайдера
+  }
+
+  .reviews__photo {
+    position: relative;
+
+    img {
+      text-align: center;
+    }
+  }
+
+  .reviews__photo::before {
+    left: 2px; //разное
+  }
+
+  .reviews__photo::after {
+    right: 2px; //разное
+  }
+
+  .reviews__item {
+    padding: 85px 30px 40px; //разное
+    margin-top: -85px;
+    background-color: $teriary-color;
+  }
+
+  .reviews__item-title {
+    margin-top: 31px;
+    color: white; //особенность review
+  }
+
+  .reviews__item-content {
+    margin-top: 17px;
+  }
+}
+
+.slider {
+
+  .slider__item-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .slider__photo::before {
+    content: "";
+    position: absolute;
+    top: 45.5%;
+    @extend %left-arrow;
+  }
+
+  .slider__photo::after {
+    content: "";
+    position: absolute;
+    top: 45.5%;
+    @extend %right-arrow;
+  }
+
+  .slider__item-content {
+    color: rgba(255, 255, 255, 0.72); //общее
+  }
+
 }
