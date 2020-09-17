@@ -124,31 +124,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 276px;
 }
 
+.container {
+  padding: 0 15px;
+}
+
 .header {
   background-color: #181617;
   background-image: url("../images/header-cat-mobile@1x.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   font-weight: 400;
-  /*.logo img:hover,
-.logo img:focus {
-  fill: #ffffff;
-}*/
 }
 
 .header .header__container {
   margin: 0 auto;
   padding: 0 40px;
   min-width: 240px;
-}
-
-.header .header__logo {
-  -webkit-transition: fill 0.3s ease-out;
-  transition: fill 0.3s ease-out;
-}
-
-.header .header__logo:active {
-  opacity: 0.5;
 }
 
 .header .header__city {
@@ -193,12 +184,6 @@ h1, h2, h3, h4, h5, h6 {
 .section {
   padding-top: 54px;
   padding-bottom: 60px;
-}
-
-.section .section__container {
-  /*min-width: 290px; //TODO: решить, убрать или оставить
-    margin: 0 auto;*/
-  padding: 0 15px;
 }
 
 .section_light {

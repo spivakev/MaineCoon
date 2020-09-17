@@ -56,6 +56,12 @@ $teriary-color: $x-dark-gray;
   }
 }
 
+.container {
+  padding: 0 15px;
+}
+
+
+
 .header {
   background-color: $teriary-color;
   background-image: url("../images/header-cat-mobile@1x.png");
@@ -68,20 +74,6 @@ $teriary-color: $x-dark-gray;
     padding: 0 40px;
     min-width: 240px;
   }
-
-  .header__logo {
-    transition: fill 0.3s ease-out; //прочитать 
-  }
-
-  /*.logo img:hover,
-.logo img:focus {
-  fill: #ffffff;
-}*/
-
-  .header__logo:active {
-    opacity: 0.5;
-  }
-
 
   .header__city {
     margin-top: 53px;
@@ -129,12 +121,6 @@ $teriary-color: $x-dark-gray;
 .section {
   padding-top: 54px;
   padding-bottom: 60px;
-
-  .section__container {
-    /*min-width: 290px; //TODO: решить, убрать или оставить
-    margin: 0 auto;*/
-    padding: 0 15px;
-  }
 }
 
 .section_light {
