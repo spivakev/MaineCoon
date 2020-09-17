@@ -119,11 +119,6 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
 }
 
-.page .page__header {
-  padding-top: 28px;
-  padding-bottom: 276px;
-}
-
 .container {
   padding: 0 15px;
 }
@@ -140,6 +135,11 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto;
   padding: 0 40px;
   min-width: 240px;
+}
+
+.header .header__wrapper {
+  padding-top: 28px;
+  padding-bottom: 276px;
 }
 
 .header .header__city {
@@ -190,13 +190,13 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1F1C1D;
 }
 
-.section-header .section-header__title {
+.section__title {
   font-size: 28px;
   line-height: 32px;
   margin: 0 auto;
 }
 
-.section-header .section-header__description {
+.section__description {
   margin-top: 24px;
   margin: 24px auto 0;
 }

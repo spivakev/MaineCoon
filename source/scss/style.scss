@@ -48,18 +48,11 @@ $teriary-color: $x-dark-gray;
   line-height: 140%;
   color: #A07B50; //TODO: сделать белый основным цветом
   text-align: center;
-
-
-  .page__header {
-    padding-top: 28px;
-    padding-bottom: 276px;
-  }
 }
 
 .container {
   padding: 0 15px;
 }
-
 
 
 .header {
@@ -73,6 +66,11 @@ $teriary-color: $x-dark-gray;
     margin: 0 auto;
     padding: 0 40px;
     min-width: 240px;
+  }
+
+  .header__wrapper {
+    padding-top: 28px;
+    padding-bottom: 276px;
   }
 
   .header__city {
@@ -127,18 +125,17 @@ $teriary-color: $x-dark-gray;
   background-color: $secondary-color;
 }
 
-.section-header {
-  .section-header__title {
-    font-size: 28px;
-    line-height: 32px;
-    margin: 0 auto;
-  }
-
-  .section-header__description {
-    margin-top: 24px;
-    margin: 24px auto 0;
-  }
+.section__title {
+  font-size: 28px;
+  line-height: 32px;
+  margin: 0 auto;
 }
+
+.section__description {
+  margin-top: 24px;
+  margin: 24px auto 0;
+}
+
 
 
 .pets {
