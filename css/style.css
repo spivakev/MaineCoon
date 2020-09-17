@@ -130,12 +130,25 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-position: right bottom;
   font-weight: 400;
+  /*.logo img:hover,
+.logo img:focus {
+  fill: #ffffff;
+}*/
 }
 
 .header .header__container {
   margin: 0 auto;
   padding: 0 40px;
   min-width: 240px;
+}
+
+.header .header__logo {
+  -webkit-transition: fill 0.3s ease-out;
+  transition: fill 0.3s ease-out;
+}
+
+.header .header__logo:active {
+  opacity: 0.5;
 }
 
 .header .header__city {
@@ -620,10 +633,6 @@ h1, h2, h3, h4, h5, h6 {
   height: 100%;
   background-color: #A07B50;
   background-image: url("../images/svg/openedQuestion.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  border: 0;
-  border-left: 0.5px solid #A07B50;
 }
 
 .faq .faq__question-text {

@@ -69,6 +69,20 @@ $teriary-color: $x-dark-gray;
     min-width: 240px;
   }
 
+  .header__logo {
+    transition: fill 0.3s ease-out; //прочитать 
+  }
+
+  /*.logo img:hover,
+.logo img:focus {
+  fill: #ffffff;
+}*/
+
+  .header__logo:active {
+    opacity: 0.5;
+  }
+
+
   .header__city {
     margin-top: 53px;
   }
@@ -84,6 +98,7 @@ $teriary-color: $x-dark-gray;
     margin-top: 35px;
   }
 }
+
 
 .title {
   font-family: 'Yeseva One', cursive;
@@ -569,10 +584,6 @@ $teriary-color: $x-dark-gray;
     height: 100%;
     background-color: #A07B50;
     background-image: url("../images/svg/openedQuestion.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 0;
-    border-left: 0.5px solid #A07B50;
   }
 
   .faq__question-text {
