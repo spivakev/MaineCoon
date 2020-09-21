@@ -17,7 +17,7 @@ const questionToggle = function () {
   }
 }
 
-
+// Поиск индекса слайда, который отображается на данный момент
 const findCurrentSlideIndex = function (slideList) {
   for (let i = 0; i < slideList.length; i++) {
     if (!slideList[i].classList.contains('hide')) {
@@ -60,7 +60,6 @@ const showNextSlide = function (section) {
 Добавить обработку этих случаев (?)
 Выводить хотя бы в консоль предупреждение!
  */
-
 
 const showPrevSlide = function (section) {
   let prevButton = section.querySelector('.slider__btn_prev');
