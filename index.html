@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="description" content="Питомник Мейн-Кунов в Новосибирске. Первый питомник с расширенным спектром услуг">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Питомник Мейн-Кунов</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
@@ -286,17 +286,33 @@
         отметками о
         прививках и документ с родословной</p>
 
-      <div class="pets__gallery gallery">
-        <ul class="pets__menu menu">
-          <li class="menu__item"><a class="menu__link menu__link_active" href="#">Коты</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Кошки</a></li>
-          <li class="menu__item"><a class="menu__link" href="#">Котята</a></li>
-        </ul>
 
+      <ul class="pets__menu menu">
+        <li class="menu__item"><a class="menu__link menu__link_active" href="#">Коты</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Кошки</a></li>
+        <li class="menu__item"><a class="menu__link" href="#">Котята</a></li>
+      </ul>
+
+      <div class="pets__slider-wrapper">
         <div class="pets__slider slider">
-          <div class="slider__content"></div>
+          <button class="slider__btn slider__btn_prev" type="button"></button>
+
+          <div class="gallery slider__content">
+            <div class="slider__slide hidden">
+              <img class="gallery__image" src="images/pets-item-1-desktop@2x.png" alt="Мейн-Кун">
+            </div>
+            <div class="slider__slide hidden">
+              <img class="gallery__image" src="images/pets-item-3-desktop@2x.png" alt="Мейн-Кун">
+            </div>
+            <div class="slider__slide ">
+              <img class="gallery__image" src="images/pets-item-2-desktop@2x.png" alt="Мейн-Кун">
+            </div>
+          </div>
+          <button class="slider__btn slider__btn_next" type="button"></button>
         </div>
       </div>
+
+
       <a href="#" class="pet-section__btn btn btn_ghost">Смотреть больше</a>
     </div>
   </section>
@@ -370,14 +386,16 @@
         <li class="care-list__item">
           <a href="#" class="care-list__link">
             <h3 class="care-list__title">Уши и глаза</h3>
-            <p class="care-list__content">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих питомцев,
+            <p class="care-list__content">Владельцам котов необходимо регулярно осматривать ушки и глазасвоих
+              питомцев,
               ведь это может быть признаками заболевания</p>
           </a>
         </li>
         <li class="care-list__item">
           <a href="#" class="care-list__link">
             <h3 class="care-list__title">Когти</h3>
-            <p class="care-list__content">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как подобрать
+            <p class="care-list__content">Нужно ли стричь когти? Это мы и выясним, плюс ко всему расскажем как
+              подобрать
               идеальную когтеточку</p>
           </a>
         </li>
@@ -405,7 +423,7 @@
         <div class="team__item">
           <blockquote>
             <cite>
-              <h3 class="team__item-title slider__item-title">Серёжа Попов</h3>
+              <!--   <h3 class="team__item-title slider__item-title">Серёжа Попов</h3>
               <span class="team__item-jobTitle">Основатель питомника</span>
             </cite>
             <p class="team__item-content slider__item-content">Наш питомник занимается разведением Мейн-Кунов на
@@ -415,32 +433,32 @@
               вами питомца</p>
           </blockquote>
 
-          <ul class="team__social social">
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <span>Фейсбук</span>
-                <svg class="team__icon social__icon social__icon_fb" width="5" height="12">
-                  <use xlink:href="#icon-fb" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <span>Твиттер</span>
-                <svg class="team__icon social__icon social__icon_tw" width="16" height="12">
-                  <use xlink:href="#icon-tw" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a href="#" class="social__link">
-                <span display="none">Вконтакте</span>
-                <svg class="team__icon social__icon social__icon_vk" width="18" height="10">
-                  <use xlink:href="#icon-vk" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+              <ul class="team__social social">
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span>Фейсбук</span>
+                    <svg class="team__icon social__icon social__icon_fb" width="5" height="12">
+                      <use xlink:href="#icon-fb" x="0" y="0"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span>Твиттер</span>
+                    <svg class="team__icon social__icon social__icon_tw" width="16" height="12">
+                      <use xlink:href="#icon-tw" x="0" y="0"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="social__item">
+                  <a href="#" class="social__link">
+                    <span display="none">Вконтакте</span>
+                    <svg class="team__icon social__icon social__icon_vk" width="18" height="10">
+                      <use xlink:href="#icon-vk" x="0" y="0"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>-->
         </div>
       </div>
     </div>
@@ -542,11 +560,12 @@
           <img src="images/reviews-section-author-mobile@1x.png" width="242" height="166" alt="Сотрудник">
         </div>
         <div class="reviews__item">
-          <blockquote>
-            <cite>
+          <!-- <blockquote>
+          <cite>
               <h3 class="reviews__item-title slider__item-title">Серёжа Попов</h3>
             </cite>
-            <p class="reviews__item-content slider__item-content">Я выражаю огромную благодарность вашему питомнику. Мой
+            <p class="reviews__item-content slider__item-content">Я выражаю огромную благодарность вашему питомнику.
+              Мой
               Феликс невероятно
               умен и воспитан. Огромным плюсом питомника
               является возможность консультироваться в любое время</p>
@@ -573,7 +592,7 @@
                 </a>
               </li>
             </ul>
-          </div>
+          </div>-->
         </div>
       </div>
     </div>
