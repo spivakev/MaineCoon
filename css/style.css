@@ -69,6 +69,14 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .page {
   min-width: 320px;
   background-color: #151313;
@@ -236,10 +244,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu .menu__link_active {
   color: white;
-}
-
-.hidden {
-  display: none;
 }
 
 .slider {
