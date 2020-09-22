@@ -154,6 +154,7 @@ const showPrevSlideAndDescription = function (section) {
 
 let petSection = document.querySelector('.pets');
 let teamSection = document.querySelector('.team');
+let reviewsSection = document.querySelector('.reviews');
 
 questionToggle();
 showNextSlide(petSection);
@@ -161,3 +162,6 @@ showPrevSlide(petSection);
 
 showNextSlideAndDescription(teamSection);
 showPrevSlideAndDescription(teamSection);
+
+showNextSlideAndDescription(reviewsSection);
+showPrevSlideAndDescription(reviewsSection);
