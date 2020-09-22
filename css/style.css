@@ -491,14 +491,14 @@ h1, h2, h3, h4, h5, h6 {
   color: white;
 }
 
-.slider-item__title {
+.slide-description__title {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
 }
 
-.slider-item__content {
+.slide-description__content {
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -529,7 +529,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 11.712vw;
 }
 
-.team .team__item {
+.team .team__item_wrapper {
   margin-top: -65px;
   padding-top: 65px;
   padding-bottom: 15px;

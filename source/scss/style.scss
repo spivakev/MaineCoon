@@ -418,14 +418,14 @@ $teriary-color: $x-dark-gray;
 }
 
 
-.slider-item__title {
+.slide-description__title {
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
 }
 
-.slider-item__content {
+.slide-description__content {
   color: rgba(255, 255, 255, 0.72);
 }
 
@@ -459,7 +459,7 @@ $teriary-color: $x-dark-gray;
     right: 11.712vw;
   }
 
-  .team__item {
+  .team__item_wrapper {
     margin-top: -65px;
     padding-top: 65px;
     padding-bottom: 15px;
