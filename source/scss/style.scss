@@ -605,6 +605,9 @@ $teriary-color: $x-dark-gray;
 
 
 .reviews {
+  .reviews__wrapper {
+    padding-top: 0;
+  }
 
   .reviews__slider {
     margin-top: 53px;

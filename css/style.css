@@ -681,6 +681,10 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 0;
 }
 
+.reviews .reviews__wrapper {
+  padding-top: 0;
+}
+
 .reviews .reviews__slider {
   margin-top: 53px;
   position: relative;
