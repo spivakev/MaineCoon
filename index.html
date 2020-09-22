@@ -468,7 +468,6 @@
             elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
         </blockquote>
 
-
         <ul class="team__social social">
           <li class="social__item">
             <a href="#" class="social__link">
@@ -496,7 +495,6 @@
           </li>
         </ul>
       </div>
-
 
     </div>
     </div>
@@ -593,44 +591,78 @@
   <section class="reviews section section_light">
     <div class="container section__wrapper reviews__wrapper">
       <h2 class="section__title title">Отзывы</h2>
+
       <div class="reviews__slider slider">
-        <div class="reviews__photo slider__photo">
-          <img src="images/reviews-section-author-mobile@1x.png" width="242" height="166" alt="Сотрудник">
+
+        <button class="slider__btn slider__btn_prev reviews__btn-prev" type="button"></button>
+
+        <div class="slider__content">
+          <div class="reviews__slide slider__slide hide">
+            <img class="slider__image" src="images/reviews-section-author-mobile@1x.png" width="242" height="166"
+              alt="Сотрудник">
+          </div>
+
+          <div class="reviews__slide slider__slide ">
+            <img class="slider__image" src="images/pets-item-1-desktop@2x.png" alt="Мейн-Кун">
+          </div>
+          <div class="reviews__slide slider__slide hide">
+            <img class="slider__image" src="images/pets-item-2-desktop@2x.png" alt="Мейн-Кун">
+          </div>
         </div>
-        <div class="reviews__item">
-          <!-- <blockquote>
+
+        <button class="slider__btn slider__btn_next reviews__btn-next" type="button"></button>
+      </div>
+
+      <div class="reviews__item_wrapper">
+        <blockquote class="slide-description">
           <cite>
-              <h3 class="reviews__item-title slider__item-title">Серёжа Попов</h3>
-            </cite>
-            <p class="reviews__item-content slider__item-content">Я выражаю огромную благодарность вашему питомнику.
-              Мой
-              Феликс невероятно
-              умен и воспитан. Огромным плюсом питомника
-              является возможность консультироваться в любое время</p>
-          </blockquote>
+            <h3 class="reviews__item-title slide-description__title">Серёжа Попов</h3>
+          </cite>
+          <p class="reviews__item-content slide-description__content">Я выражаю огромную благодарность вашему питомнику.
+            Мой
+            Феликс невероятно
+            умен и воспитан. Огромным плюсом питомника
+            является возможность консультироваться в любое время</p>
+        </blockquote>
 
-          <div class="reviews__content-wrapper reviews__footer">
-            <time class="reviews__date" datetime="2018-05-24" class="reviews__date">24 мая 2018</time>
+        <blockquote class="slide-description hide">
+          <cite>
+            <h3 class="reviews__item-title slide-description__title">Иван Васильев</h3>
+          </cite>
+          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente iure,
+            magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
+        </blockquote>
 
-            <ul class="reviews__social social">
-              <li class="reviews__social-item social__item">
-                <a href="#" class="reviews__social-link social__link">
-                  <span>Твиттер</span>
-                  <svg class="reviews__icon social__icon social__icon_tw" width="16" height="12">
-                    <use xlink:href="#icon-tw" x="0" y="0"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="reviews__social-item social__item">
-                <a href="#" class="reviews__social-link social__link">
-                  <span display="none">Вконтакте</span>
-                  <svg class="reviews__icon social__icon social__icon_vk" width="18" height="10">
-                    <use xlink:href="#icon-vk" x="0" y="0"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>-->
+        <blockquote class="slide-description hide">
+          <cite>
+            <h3 class="reviews__item-title slide-description__title">Максим Денисов</h3>
+          </cite>
+          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
+        </blockquote>
+
+        <div class="reviews__content-wrapper reviews__footer">
+          <time class="reviews__date" datetime="2018-05-24" class="reviews__date">24 мая 2018</time>
+
+          <ul class="reviews__social social">
+            <li class="reviews__social-item social__item">
+              <a href="#" class="reviews__social-link social__link">
+                <span>Твиттер</span>
+                <svg class="reviews__icon social__icon social__icon_tw" width="16" height="12">
+                  <use xlink:href="#icon-tw" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="reviews__social-item social__item">
+              <a href="#" class="reviews__social-link social__link">
+                <span display="none">Вконтакте</span>
+                <svg class="reviews__icon social__icon social__icon_vk" width="18" height="10">
+                  <use xlink:href="#icon-vk" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

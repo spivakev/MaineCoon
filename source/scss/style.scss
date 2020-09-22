@@ -431,7 +431,6 @@ $teriary-color: $x-dark-gray;
 
 
 .team {
-
   .team__description {
     width: 90%;
   }
@@ -611,26 +610,15 @@ $teriary-color: $x-dark-gray;
 
   .reviews__slider {
     margin-top: 53px;
-    position: relative; //перенести в класс слайдера
+    position: relative; //перенести в класс слайдера?
   }
 
-  .reviews__photo {
-    position: relative;
-
-    img {
-      text-align: center;
-    }
+  .reviews__slide {
+    width: 100%;
+    max-width: 75.625vw;
   }
 
-  .reviews__photo::before {
-    left: 2px;
-  }
-
-  .reviews__photo::after {
-    right: 2px;
-  }
-
-  .reviews__item {
+  .reviews__item_wrapper {
     padding: 85px 30px 40px;
     margin-top: -85px;
     background-color: $teriary-color;
@@ -643,6 +631,14 @@ $teriary-color: $x-dark-gray;
 
   .reviews__item-content {
     margin-top: 17px;
+  }
+
+  .reviews__btn-next {
+    right: -25px;
+  }
+
+  .reviews__btn-prev {
+    left: -25px;
   }
 
   .reviews__footer {

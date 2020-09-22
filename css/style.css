@@ -690,23 +690,12 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.reviews .reviews__photo {
-  position: relative;
+.reviews .reviews__slide {
+  width: 100%;
+  max-width: 75.625vw;
 }
 
-.reviews .reviews__photo img {
-  text-align: center;
-}
-
-.reviews .reviews__photo::before {
-  left: 2px;
-}
-
-.reviews .reviews__photo::after {
-  right: 2px;
-}
-
-.reviews .reviews__item {
+.reviews .reviews__item_wrapper {
   padding: 85px 30px 40px;
   margin-top: -85px;
   background-color: #181617;
@@ -719,6 +708,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .reviews .reviews__item-content {
   margin-top: 17px;
+}
+
+.reviews .reviews__btn-next {
+  right: -25px;
+}
+
+.reviews .reviews__btn-prev {
+  left: -25px;
 }
 
 .reviews .reviews__footer {
