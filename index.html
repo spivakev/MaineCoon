@@ -375,7 +375,8 @@
       <ul class="advantages-list">
         <li class="advantages-list__item advantages-list__item_active">
           <a class="advantages-list__link">
-            <svg class="advantages-list__icon advantages-list__icon_active advantages__icon-veterinary-service" width="80" height="88">
+            <svg class="advantages-list__icon advantages-list__icon_active advantages__icon-veterinary-service"
+              width="80" height="88">
               <use xlink:href="#icon-veterinary-service" x="0" y="0"></use>
             </svg>
             <p class="advantages-list__text">Бесплатное ветеринарное обслуживание 5 лет</p>
@@ -440,91 +441,101 @@
   </section>
 
   <section class="team section">
-    <div class="container section__wrapper">
+    <div class="container team__wrapper section__wrapper">
       <h2 class="team__title section__title title">Наша команда</h2>
       <p class="team__description section__description">Все сотрудники нашего питомника дипломированые
         специалисты в области
         фелинологии и ветеринарии</p>
-      <div class="team__slider slider">
 
-        <button class="slider__btn slider__btn_prev team__btn-prev" type="button"></button>
+      <div class="team__content-wrapper">
+        <div class="team__slider slider">
 
-        <div class="slider__content">
-          <div class="team__slide slider__slide">
-            <img class="slider__image" src="images/employee-1-mobile@2x.png" width="126" height="126" alt="Сотрудник">
+          <button class="slider__btn team__btn_prev slider__btn_prev" type="button"></button>
+
+          <div class="slider__content">
+            <div class="team__slide slider__slide">
+              <img class="slider__image team__image" src="images/employee-1-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
+            <div class="team__slide slider__slide hide">
+              <img class="slider__image team__image" src="images/employee-2-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
+            <div class="team__slide slider__slide hide">
+              <img class="slider__image team__image" src="images/employee-3-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
           </div>
-          <div class="team__slide slider__slide hide">
-            <img class="slider__image" src="images/employee-2-mobile@2x.png" width="126" height="126" alt="Сотрудник">
-          </div>
-          <div class="team__slide slider__slide hide">
-            <img class="slider__image" src="images/employee-3-mobile@2x.png" width="126" height="126" alt="Сотрудник">
-          </div>
+
+          <button class="slider__btn team__btn_next slider__btn_next" type="button"></button>
+
         </div>
 
-        <button class="slider__btn slider__btn_next team__btn-next" type="button"></button>
+        <div class="team__item-wrapper">
+          <div class="team__item-inner">
+            <blockquote class="slide-description">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Серёжа Попов</h3>
+                <span class="team__item-jobTitle">Основатель питомника</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Наш питомник занимается разведением Мейн-Кунов на
+                протяжениие 15 лет. Мы в
+                ответе за каждого
+                приобретенного
+                вами питомца</p>
+            </blockquote>
 
+            <blockquote class="slide-description hide">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Иван Васильев</h3>
+                <span class="team__item-jobTitle">Сотрудник питомника</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente
+                iure,
+                magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
+            </blockquote>
+
+            <blockquote class="slide-description hide">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Максим Денисов</h3>
+                <span class="team__item-jobTitle">Грумер</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
+            </blockquote>
+
+            <ul class="team__social social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span>Фейсбук</span>
+                  <svg class="team__icon social__icon social__icon_fb  team__icon_fb" width="5" height="12">
+                    <use xlink:href="#icon-fb" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span>Твиттер</span>
+                  <svg class="team__icon social__icon social__icon_tw team__icon_tw" width="16" height="12">
+                    <use xlink:href="#icon-tw" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span display="none">Вконтакте</span>
+                  <svg class="team__icon social__icon social__icon_vk team__icon_vk" width="18" height="10">
+                    <use xlink:href="#icon-vk" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div class="team__item_wrapper">
-        <blockquote class="slide-description">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Серёжа Попов</h3>
-            <span class="team__item-jobTitle">Основатель питомника</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Наш питомник занимается разведением Мейн-Кунов на
-            протяжениие 15 лет. Мы в
-            ответе за каждого
-            приобретенного
-            вами питомца</p>
-        </blockquote>
-
-        <blockquote class="slide-description hide">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Иван Васильев</h3>
-            <span class="team__item-jobTitle">Сотрудник питомника</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente iure,
-            magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
-        </blockquote>
-
-        <blockquote class="slide-description hide">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Максим Денисов</h3>
-            <span class="team__item-jobTitle">Грумер</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
-        </blockquote>
-
-        <ul class="team__social social">
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span>Фейсбук</span>
-              <svg class="team__icon social__icon social__icon_fb" width="5" height="12">
-                <use xlink:href="#icon-fb" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span>Твиттер</span>
-              <svg class="team__icon social__icon social__icon_tw" width="16" height="12">
-                <use xlink:href="#icon-tw" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span display="none">Вконтакте</span>
-              <svg class="team__icon social__icon social__icon_vk" width="18" height="10">
-                <use xlink:href="#icon-vk" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
     </div>
   </section>

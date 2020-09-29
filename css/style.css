@@ -562,6 +562,20 @@ h3 {
   background-image: url("../images/svg/arrow-next.svg");
 }
 
+@media (min-width: 767px) {
+  .slide-description__title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+
+@media (min-width: 768px) {
+  .slide-description__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+
 .breed-features .breed-features__image {
   position: relative;
   z-index: 1;
@@ -947,73 +961,150 @@ h3 {
 .slide-description__title {
   font-style: normal;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 21px;
 }
 
 .slide-description__content {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.team .team__description {
-  width: 90%;
-}
-
 .team .team__slider {
-  margin-top: 30px;
   position: relative;
-}
-
-.team .team__slide {
-  width: 50%;
-  height: 44vw;
-}
-
-.team .team__btn-prev,
-.team .team__btn-next {
-  top: 42.5%;
-}
-
-.team .team__btn-prev {
-  left: 11.712vw;
-}
-
-.team .team__btn-next {
-  right: 11.712vw;
-}
-
-.team .team__item_wrapper {
-  margin-top: -65px;
-  padding-top: 65px;
-  padding-bottom: 15px;
-  background-color: #1F1C1D;
-}
-
-.team .team__item-title {
-  margin-top: 13px;
-  margin-bottom: 4px;
-  font-weight: bold;
-}
-
-.team .team__item-jobTitle {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 135.94%;
-}
-
-.team .team__item-content {
-  margin-top: 17px;
-  padding: 0 11px;
-  color: rgba(255, 255, 255, 0.72);
-}
-
-.team .team__social {
-  margin-top: 24px;
 }
 
 .team .team__icon {
   fill: white;
+}
+
+@media (max-width: 767px) {
+  .team .team__description {
+    width: 90%;
+  }
+  .team .team__slider {
+    margin-top: 30px;
+    position: relative;
+  }
+  .team .team__slide {
+    width: 50%;
+    height: 44vw;
+  }
+  .team .team__btn_prev,
+  .team .team__btn_next {
+    top: 42.5%;
+  }
+  .team .team__btn_prev {
+    left: 11.712vw;
+  }
+  .team .team__btn_next {
+    right: 11.712vw;
+  }
+  .team .team__item-wrapper {
+    margin-top: -65px;
+    padding-top: 65px;
+    padding-bottom: 15px;
+    background-color: #1F1C1D;
+  }
+  .team .team__item-title {
+    margin-top: 13px;
+    margin-bottom: 4px;
+    font-weight: bold;
+  }
+  .team .team__item-jobTitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135.94%;
+  }
+  .team .team__item-content {
+    margin-top: 17px;
+    padding: 0 11px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .team .team__social {
+    margin-top: 24px;
+  }
+}
+
+@media (min-width: 768px) {
+  .team .team__wrapper {
+    padding-top: 80px;
+    padding-bottom: 194px;
+  }
+  .team .team__content-wrapper {
+    position: relative;
+    margin-top: 26px;
+    padding-right: 30px;
+  }
+  .team .team__description {
+    width: 70%;
+  }
+  .team .team__slider {
+    position: absolute;
+    bottom: -96px;
+    left: 403px;
+  }
+  .team .team__slider .team__btn_prev,
+  .team .team__slider .team__btn_next {
+    bottom: 0px;
+  }
+  .team .team__slider .team__btn_prev {
+    left: -41px;
+  }
+  .team .team__slider .team__btn_next {
+    right: -41px;
+  }
+  .team .team__slide {
+    width: 208px;
+    height: 210px;
+  }
+  .team .team__image {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .team .team__item-wrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 90.8%;
+    min-width: 649px;
+    padding: 22px;
+    border: 0.5px solid rgba(160, 123, 80, 0.43);
+  }
+  .team .team__item-inner {
+    width: 100%;
+    padding: 72px 95px 68px 109px;
+    background-color: #1F1C1D;
+    text-align: left;
+  }
+  .team .team__item-title {
+    margin-bottom: 5px;
+  }
+  .team .team__item-jobTitle {
+    font-style: normal;
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .team .team__item-content {
+    margin-top: 23px;
+    line-height: 25px;
+    color: rgba(255, 255, 255, 0.72);
+  }
+  .team .team__social {
+    margin-top: 45px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .team .team__icon_fb {
+    width: 7px;
+    height: 15px;
+  }
+  .team .team__icon_tw {
+    width: 20px;
+    height: 14px;
+  }
+  .team .team__icon_vk {
+    width: 21px;
+    height: 13px;
+  }
 }
 
 .social {
