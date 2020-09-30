@@ -7,6 +7,8 @@ $x-light-black: #151313;
 $x-dark-gray: #181617;
 $x-gray: #1F1C1D;
 
+$x-beige: #A07B50;
+
 $primary-color: $x-light-black;
 $secondary-color: $x-gray;
 $teriary-color: $x-dark-gray;
@@ -34,7 +36,7 @@ h3 {
     sans-serif;
   font-style: normal;
   font-weight: 300;
-  color: #A07B50; //TODO: сделать белый основным цветом
+  color: $x-beige; // сделать белый основным цветом
   text-align: center;
 }
 
@@ -255,7 +257,7 @@ h3 {
 
 
 .btn_ghost {
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid $x-beige;
   text-decoration: none;
   color: #ffffff;
 }
@@ -555,7 +557,7 @@ h3 {
     position: absolute;
     z-index: -1;
     border-radius: 50%;
-    border: 0.5px solid #A07B50;
+    border: 0.5px solid $x-beige;
   }
 
 }
@@ -637,7 +639,7 @@ h3 {
     content: "";
     position: absolute;
     border-radius: 50%;
-    background-color: #A07B50;
+    background-color: $x-beige;
   }
 
   .features-list__item:last-child {
@@ -759,7 +761,7 @@ h3 {
 }
 
 .advantages-list__item_active {
-  background-color: #A07B50;
+  background-color: $x-beige;
 }
 
 .advantages-list__link {
@@ -823,7 +825,7 @@ h3 {
     }
 
     .advantages-list__icon_active {
-      stroke: #A07B50;
+      stroke: $x-beige;
     }
 
     .advantages-list__icon {
@@ -870,7 +872,7 @@ h3 {
   .care-list__link {
     position: relative;
     display: block;
-    border: 0.5px solid #A07B50;
+    border: 0.5px solid $x-beige;
     text-align: left;
     background: rgba(0, 0, 0, 0.3);
   }
@@ -883,8 +885,8 @@ h3 {
     right: 0px;
     height: 100%;
 
-    background-color: #A07B50;
-    border-left: 1px solid #a07b50;
+    background-color: $x-beige;
+    border-left: 1px solid #$x-beige;
     background-image: url("../images/svg/arrowDetails.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -895,7 +897,7 @@ h3 {
     font-style: normal;
     font-weight: bold;
 
-    color: #A07B50;
+    color: $x-beige;
   }
 
   .care-list__content {
@@ -1173,8 +1175,7 @@ h3 {
 
   .social__item {
     display: inline-block;
-    //min-width: 18px;
-    margin-right: 8px; //10
+    margin-right: 8px;
 
     .social__link {
       display: flex;
@@ -1194,163 +1195,316 @@ h3 {
 
 
 .faq {
-  .faq__description {
-    max-width: 190px;
-  }
-
-  .faq__list {
-    margin-top: 36px;
-
-    .faq__item {
-      margin-bottom: 30px;
-    }
-
-    .faq__item:last-of-type {
-      margin-bottom: 0px;
-    }
-  }
 
   .faq__question {
     position: relative;
     display: block;
     font-weight: bold;
-    padding: 10px 17px 11px 15px;
   }
 
   .faq__question::-webkit-details-marker {
     display: none;
   }
 
-  .faq__question::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 14.7%;
-    height: 100%;
-    background-image: url("../images/svg/closedQuestion.svg");
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 0;
-    border-left: 0.5px solid #A07B50;
-  }
-
+  .faq__question::after,
   .faq__question_open::after {
     content: "";
     position: absolute;
     top: 0;
     right: 0;
-    width: 14.7%;
     height: 100%;
-    background-color: #A07B50;
-    background-image: url("../images/svg/openedQuestion.svg");
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
-  .faq__question-text {
-    max-width: 90%;
+  .faq__question::after {
+    border: 0;
+    border-left: 0.5px solid $x-beige;
+    background-image: url("../images/svg/closedQuestion.svg");
+  }
+
+  .faq__question_open::after {
+    background-color: $x-beige;
+    background-image: url("../images/svg/openedQuestion.svg");
   }
 
   .faq__question,
   .faq__answer {
-    border: 0.5px solid #A07B50; //#544332;
+    border: 0.5px solid $x-beige;
     color: #DDD0C3;
     text-align: left;
   }
 
-  .faq__answer {
-    border-top: none;
-    padding: 10px 17px 12px 15px;
+  .faq__item:last-of-type {
+    margin-bottom: 0px;
   }
 
-  .faq__paragraph {
-    margin-bottom: 15px;
-  }
+}
 
-  .faq__paragraph:last-of-type {
-    margin-bottom: 0;
+
+@media (max-width: 767px) {
+  .faq {
+    .faq__description {
+      max-width: 190px;
+    }
+
+    .faq__list {
+      margin-top: 36px;
+    }
+
+    .faq__item {
+      margin-bottom: 30px;
+    }
+
+    .faq__question {
+      padding: 10px 17px 11px 15px;
+    }
+
+    .faq__question::after,
+    .faq__question_open::after {
+      width: 14.7%;
+    }
+
+    .faq__question-text {
+      max-width: 90%;
+    }
+
+    .faq__answer {
+      border-top: none;
+      padding: 10px 17px 12px 15px;
+    }
+
+    .faq__paragraph {
+      margin-bottom: 15px;
+    }
+
+    .faq__paragraph:last-of-type {
+      margin-bottom: 0;
+    }
   }
 }
 
 
-.reviews {
-  .reviews__wrapper {
-    padding-top: 0;
-  }
+@media (min-width: 768px) {
 
+  .faq {
+    .faq__wrapper {
+      padding-top: 137px;
+    }
+
+    .faq__description {
+      min-width: 500px;
+      margin-top: 19px;
+    }
+
+    .faq__list {
+      margin-top: 53px;
+      padding-left: 111px;
+      width: 93%;
+      counter-reset: faqItemCount;
+    }
+
+    .faq__item {
+      margin-bottom: 23px;
+      position: relative;
+      counter-increment: faqItemCount;
+    }
+
+    .faq__item::before {
+      position: absolute;
+      content: "0"counter(faqItemCount);
+      top: 11px;
+      left: -79px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 50px;
+      line-height: 59px;
+
+      color: $x-beige;
+    }
+
+
+    .faq__question {
+      padding: 17px 73px 16px 27px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      min-height: 77px;
+
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+
+    .faq__question::after,
+    .faq__question_open::after {
+      width: 12.7%;
+    }
+
+    .faq__question-text {
+      max-width: 90%; // если останется 90, вынести в общее
+    }
+
+    .faq__answer {
+      border-top: none;
+      padding: 26px 73px 25px 29px;
+      font-weight: 300;
+      font-size: 16px;
+      line-height: 154%;
+    }
+
+    .faq__paragraph {
+      max-width: 85%;
+      margin-bottom: 28px;
+    }
+
+    .faq__paragraph:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+.reviews {
   .reviews__slider {
-    margin-top: 53px;
-    position: relative; //перенести в класс слайдера?
+    position: relative;
   }
 
   .reviews__slide {
     width: 100%;
-    max-width: 75.625vw;
   }
 
   .reviews__item_wrapper {
-    padding: 85px 30px 40px;
-    margin-top: -85px;
     background-color: $teriary-color;
   }
 
   .reviews__item-title {
-    margin-top: 31px;
     color: white;
   }
 
-  .reviews__item-content {
-    margin-top: 17px;
-  }
-
-  .reviews__btn-next {
-    right: -25px;
-  }
-
-  .reviews__btn-prev {
-    left: -25px;
-  }
-
-  .reviews__footer {
-    margin: 23px auto 0;
-  }
-
-  .reviews__content-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .reviews__date {
-    display: inline-block;
-    margin-right: 39px;
-    font-size: 12px;
-    line-height: 2.5;
+  /*.reviews__icon {
+    fill: $x-beige;
+    margin: 0 auto;
   }
 
   .reviews__social {
     display: inline-block;
   }
 
-  .reviews__social-item {
-    margin-right: 12px;
-  }
-
-  .reviews__social-item:last-of-type {
-    margin-right: 0;
-  }
-
   .reviews__social-link {
     border: 0.5px solid rgba(160, 123, 80, 0.27);
-    width: 28px;
-    height: 28px;
-  }
-
-  .reviews__icon {
-    fill: #a07b50;
-    margin: 0 auto;
-  }
-
+  }*/
 }
+
+
+@media(max-width: 767px) {
+  .reviews {
+    padding-bottom: 0px; //
+
+    .reviews__wrapper {
+      padding-top: 0;
+    }
+
+    .reviews__slider {
+      margin-top: 53px;
+    }
+
+    .reviews__slide {
+      max-width: 75.625vw;
+    }
+
+    .reviews__item_wrapper {
+      padding: 85px 30px 40px;
+      margin-top: -85px;
+    }
+
+    .reviews__item-title {
+      margin-top: 31px;
+      color: white;
+    }
+
+    .reviews__item-content {
+      margin-top: 17px;
+    }
+
+    .reviews__btn-next {
+      right: -25px;
+    }
+
+    .reviews__btn-prev {
+      left: -25px;
+    }
+
+    .reviews__footer {
+      margin: 23px auto 0;
+    }
+
+    .reviews__content-wrapper {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    .reviews__date {
+      display: inline-block;
+      margin-right: 39px;
+      font-size: 12px;
+      line-height: 2.5;
+    }
+
+    .reviews__social {
+      display: inline-block;
+    }
+
+    .reviews__social-item {
+      margin-right: 12px;
+    }
+
+    .reviews__social-item:last-of-type {
+      margin-right: 0;
+    }
+
+    .reviews__social-link {
+      border: 0.5px solid rgba(160, 123, 80, 0.27);
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
+
+@media(min-width: 768px) {
+
+  .reviews {
+    .reviews__wrapper {
+      padding-top: 71px;
+      padding-bottom: 87px;
+    }
+
+    .reviews__slider {
+      margin-top: 45px;
+    }
+
+    /* .reviews__icon {
+      fill: $x-beige;
+      margin: 0 auto;
+    }
+
+    .reviews__social {
+      display: inline-block;
+    }
+
+    .reviews__social-link {
+      border: 0.5px solid rgba(160, 123, 80, 0.27);
+      width: 28px;
+      height: 28px;
+    }*/
+  }
+}
+
+
+
 
 
 .footer {
@@ -1371,7 +1525,7 @@ h3 {
   }
 
   .footer__icon {
-    fill: #a07b50;
+    fill: $x-beige;
   }
 
   .footer__social-item {
