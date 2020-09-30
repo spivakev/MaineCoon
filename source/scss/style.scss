@@ -82,7 +82,6 @@ h3 {
   }
 
   .header__logo {
-    display: block;
     margin: 0 auto;
   }
 
@@ -91,6 +90,16 @@ h3 {
     height: auto;
   }
 }
+
+.logo {
+  display: block;
+
+  .header__logo-img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 
 @media (max-width: 767px) {
   .header {
@@ -1435,7 +1444,8 @@ h3 {
     }
 
     .reviews__slide {
-      max-width: 75.625vw;
+      width: 242px;
+      height: 166px;
     }
 
     .reviews__item_wrapper {
@@ -1546,37 +1556,103 @@ h3 {
       vertical-align: top;
     }
 
+    .footer__address {
+      color: #D6CCC2;
+    }
+
+    .footer__phone {
+      color: #FDF2E6;
+    }
+
+    .footer__icon {
+      fill: $x-beige;
+    }
+
   }
 }
 
 
-
 .footer {
-  padding: 35px 28px;
 
   .footer__address {
-    margin-bottom: 11px;
-    color: #D6CCC2;
+    color: rgba(253, 242, 230, 0.83);
   }
 
   .footer__phone {
     color: #FDF2E6;
   }
 
-  .footer__social {
-    margin-top: 18px;
-    margin-bottom: 23px;
-  }
-
   .footer__icon {
     fill: $x-beige;
   }
+}
 
-  .footer__social-item {
-    margin-right: 20px;
+@media (max-width: 767px) {
+  .footer {
+    padding: 35px 28px;
+
+    .footer__address {
+      margin-bottom: 11px;
+    }
+
+    .footer__phone {
+      color: #FDF2E6;
+    }
+
+    .footer__social {
+      margin-top: 18px;
+      margin-bottom: 23px;
+    }
+
+    .footer__icon {
+      fill: $x-beige;
+    }
+
+    .footer__social-item {
+      margin-right: 20px;
+    }
+
+    .footer__social-item:last-of-type {
+      margin-right: 0;
+    }
+
+    .footer__logo {
+      margin: 23px auto 0;
+      width: 56px;
+      height: 25px;
+    }
   }
+}
 
-  .footer__social-item:last-of-type {
-    margin-right: 0;
+@media (min-width: 768px) {
+  .footer {
+    font-size: 14px;
+    line-height: 27px;
+
+    .footer__container {
+      padding: 35px 47px 46px 54px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+    }
+
+    .footer__social {
+      order: 1;
+    }
+
+    .footer__address {
+      order: 2;
+      padding-left: 38px;
+    }
+
+    .footer__phone {
+      order: 3;
+      font-weight: bold;
+    }
+
+    .footer__logo {
+      display: none;
+    }
   }
 }
