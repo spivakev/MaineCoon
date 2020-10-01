@@ -260,6 +260,7 @@
       <symbol id="icon-vk" viewBox="0 0 18 10">
         <path
           d="M17.8396 8.91937C17.7912 8.8405 17.4919 8.20732 16.0518 6.90591C14.5442 5.54315 14.7467 5.76443 16.5626 3.40809C17.6685 1.97303 18.1107 1.09665 17.9723 0.722004C17.8407 0.364883 17.0273 0.459093 17.0273 0.459093L14.3226 0.474429C14.3226 0.474429 14.1223 0.448138 13.9727 0.53468C13.8275 0.620126 13.7341 0.81731 13.7341 0.81731C13.7341 0.81731 13.3055 1.92811 12.7339 2.8724C11.529 4.86505 11.0463 4.97022 10.8494 4.84643C10.3915 4.55832 10.5063 3.68743 10.5063 3.06959C10.5063 1.13828 10.8067 0.333114 9.9201 0.124976C9.62533 0.0559615 9.40932 0.00995199 8.65664 0.00228373C7.69132 -0.00757546 6.87338 0.00557011 6.41097 0.225759C6.1027 0.372551 5.86531 0.700095 6.01044 0.718718C6.18933 0.741723 6.59436 0.824978 6.80925 1.1098C7.08715 1.47678 7.07702 2.30276 7.07702 2.30276C7.07702 2.30276 7.23678 4.57585 6.70462 4.85848C6.33897 5.05238 5.8383 4.65692 4.76385 2.8483C4.21369 1.92263 3.7974 0.898375 3.7974 0.898375C3.7974 0.898375 3.71752 0.707763 3.57464 0.605885C3.40138 0.482098 3.15836 0.442661 3.15836 0.442661L0.586419 0.457997C0.586419 0.457997 0.200516 0.468952 0.0587555 0.632177C-0.0672538 0.777873 0.0486297 1.07803 0.0486297 1.07803C0.0486297 1.07803 2.06253 5.66474 4.34194 7.97727C6.43347 10.097 8.8074 9.95787 8.8074 9.95787H9.88298C9.88298 9.95787 10.2081 9.92282 10.3735 9.74864C10.5265 9.5887 10.5209 9.28854 10.5209 9.28854C10.5209 9.28854 10.4995 7.88306 11.1701 7.67602C11.8305 7.47226 12.6788 9.03439 13.5777 9.6358C14.2573 10.0904 14.7737 9.99074 14.7737 9.99074L17.178 9.95787C17.178 9.95787 18.4359 9.88229 17.8396 8.91937Z" />
+      </symbol>
     </svg>
   </div>
 
@@ -268,29 +269,59 @@
     <div class="header__wrapper">
       <div class="header__container">
         <a class="header__logo logo">
-          <img src="images/svg/icon-crown.svg" alt="Логотип">
+          <img class="header__logo-img logo__img" src="images/svg/icon-crown.svg" alt="Логотип">
         </a>
-        <p class="header__city">Новосибирск</p>
-        <h1 class="header__title title">Питомник Мейн-Кунов</h1>
-        <p class="header__description">Первый питомник с расширенным спектром услуг</p>
-        <a class="header__btn btn btn_ghost" href="#">Смотреть котиков</a>
+        <div class="header__inner">
+          <div class="header__content">
+            <p class="header__city">Новосибирск</p>
+            <h1 class="header__title title">Питомник Мейн-Кунов</h1>
+            <p class="header__description">Первый питомник с расширенным спектром услуг</p>
+            <a class="header__btn btn btn_ghost" href="#">Смотреть котиков</a>
+          </div>
+          <ul class="social header__social">
+            <li class="social__item header__icon">
+              <a href="#" class="social__link header__social-link">
+                <span display="none">Вконтакте</span>
+                <svg class="header__icon header__icon_vk social__icon social__icon_vk" width="18" height="10">
+                  <use xlink:href="#icon-vk" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link header__social-link">
+                <span>Твиттер</span>
+                <svg class="header__icon header__icon_tw social__icon social__icon_tw" width="16" height="12">
+                  <use xlink:href="#icon-tw" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social__item">
+              <a href="#" class="social__link header__social-link">
+                <span>Фейсбук</span>
+                <svg class="header__icon header__icon_fb social__icon social__icon_fb" width="5" height="12">
+                  <use xlink:href="#icon-fb" x="0" y="0"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </header>
 
   <section class="pets section section_light">
-    <div class="container section__wrapper">
+    <div class="container section__wrapper pets__wrapper">
       <h2 class="section__title title">Питомцы</h2>
-      <p class="section__description">Все представители нашего питомника имеют ветеринарный
+      <p class="section__description pets__description">Все представители нашего питомника имеют ветеринарный
         паспорт с
         отметками о
         прививках и документ с родословной</p>
 
 
       <ul class="pets__menu menu">
-        <li class="menu__item"><a class="menu__link menu__link_active" href="#">Коты</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Кошки</a></li>
-        <li class="menu__item"><a class="menu__link" href="#">Котята</a></li>
+        <li class="menu__item pets__menu-item"><a class="menu__link menu__link_active" href="#">Коты</a></li>
+        <li class="menu__item pets__menu-item"><a class="menu__link" href="#">Кошки</a></li>
+        <li class="menu__item pets__menu-item"><a class="menu__link" href="#">Котята</a></li>
       </ul>
 
       <div class="pets__slider-wrapper">
@@ -298,14 +329,14 @@
           <button class="slider__btn slider__btn_prev pets__btn-prev" type="button"></button>
 
           <div class="slider__content">
-            <div class="pets__slide slider__slide">
+            <div class="pets__slide pets__slide_top slider__slide">
               <img class="slider__image" src="images/pets-item-1-desktop@2x.png" alt="Мейн-Кун">
             </div>
-            <div class="pets__slide slider__slide hide">
-              <img class="slider__image" src="images/pets-item-3-desktop@2x.png" alt="Мейн-Кун">
-            </div>
-            <div class="pets__slide slider__slide hide">
+            <div class="pets__slide pets__slide_bottom slider__slide hide">
               <img class="slider__image" src="images/pets-item-2-desktop@2x.png" alt="Мейн-Кун">
+            </div>
+            <div class="pets__slide pets__slide_right slider__slide hide">
+              <img class="slider__image" src="images/pets-item-3-desktop@2x.png" alt="Мейн-Кун">
             </div>
           </div>
           <button class="slider__btn slider__btn_next pets__btn-next" type="button"></button>
@@ -313,40 +344,41 @@
       </div>
 
 
-      <a href="#" class="pet-section__btn btn btn_ghost">Смотреть больше</a>
+      <a href="#" class="pets__btn btn btn_ghost">Смотреть больше</a>
     </div>
   </section>
 
   <section class="breed-features section section_light">
-    <div class="container section__wrapper">
+    <div class="container section__wrapper breed-features__wrapper">
       <h2 class="section__title title">Особенности породы</h2>
       <p class="breed-features__description section__description">Мейн-Кун - это порода, которая вызывает к
         себе уважение.
         Приобретая в свой дом этого питомца, вы получите умное
         животное, которому нет равных</p>
       <div class="breed-features__image">
-        <img src="images/breed-section-mobile@1x.png" srcset="images/breed-section-mobile@2x.png 2x" width="267"
-          height="290" alt="Фото рыжего Мейн-Куна" />
+        <img src="images/breed-section-desktop@1x.png" srcset="images/breed-section-desktop@2x.png 2x"
+          alt="Фото рыжего Мейн-Куна" />
       </div>
       <ul class="features-list">
-        <li class="features-list__item">Легко уживается в семьях с детьми или другими
+        <li class="features-list__item features-list__item_friendly">Легко уживается в семьях с детьми или другими
           животными</li>
-        <li class="features-list__item">Выполняет команды как дрессированная собака</li>
-        <li class="features-list__item">Вес может достигать 12 кг, а длина 1 м</li>
-        <li class="features-list__item">Внешний вид этой кошки похож на дикую рысь</li>
+        <li class="features-list__item features-list__item_trained">Выполняет команды как дрессированная собака</li>
+        <li class="features-list__item features-list__item_weight">Вес может достигать 12 кг, а длина 1 м</li>
+        <li class="features-list__item features-list__item_lynx">Внешний вид этой кошки похож на дикую рысь</li>
       </ul>
     </div>
   </section>
 
   <section class="advantages section">
-    <div class="container section__wrapper">
+    <div class="container section__wrapper advantages__wrapper">
       <h2 class="advantages__title section__title title">Почему именно мы?</h2>
       <p class="advantages__description section__description">Приобретая животное в нашем питомнике, вы
         получите</p>
       <ul class="advantages-list">
         <li class="advantages-list__item advantages-list__item_active">
           <a class="advantages-list__link">
-            <svg class="advantages-list__icon advantages__icon-veterinary-service" width="80" height="88">
+            <svg class="advantages-list__icon advantages-list__icon_active advantages__icon-veterinary-service"
+              width="80" height="88">
               <use xlink:href="#icon-veterinary-service" x="0" y="0"></use>
             </svg>
             <p class="advantages-list__text">Бесплатное ветеринарное обслуживание 5 лет</p>
@@ -373,7 +405,7 @@
   </section>
 
   <section class="care section">
-    <div class="container section__wrapper">
+    <div class="container care__wrapper section__wrapper">
       <h2 class="care__title section__title title">Об уходе за Мейн-Куном</h2>
       <div class="care-list">
         <li class="care-list__item">
@@ -411,103 +443,113 @@
   </section>
 
   <section class="team section">
-    <div class="container section__wrapper">
+    <div class="container team__wrapper section__wrapper">
       <h2 class="team__title section__title title">Наша команда</h2>
       <p class="team__description section__description">Все сотрудники нашего питомника дипломированые
         специалисты в области
         фелинологии и ветеринарии</p>
-      <div class="team__slider slider">
 
-        <button class="slider__btn slider__btn_prev team__btn-prev" type="button"></button>
+      <div class="team__content-wrapper">
+        <div class="team__slider slider">
 
-        <div class="slider__content">
-          <div class="team__slide slider__slide">
-            <img class="slider__image" src="images/employee-1-mobile@2x.png" width="126" height="126" alt="Сотрудник">
+          <button class="slider__btn team__btn_prev slider__btn_prev" type="button"></button>
+
+          <div class="slider__content">
+            <div class="team__slide slider__slide">
+              <img class="slider__image team__image" src="images/employee-1-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
+            <div class="team__slide slider__slide hide">
+              <img class="slider__image team__image" src="images/employee-2-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
+            <div class="team__slide slider__slide hide">
+              <img class="slider__image team__image" src="images/employee-3-tablet@2x.png" width="126" height="126"
+                alt="Сотрудник">
+            </div>
           </div>
-          <div class="team__slide slider__slide hide">
-            <img class="slider__image" src="images/employee-2-mobile@2x.png" width="126" height="126" alt="Сотрудник">
-          </div>
-          <div class="team__slide slider__slide hide">
-            <img class="slider__image" src="images/employee-3-mobile@2x.png" width="126" height="126" alt="Сотрудник">
-          </div>
+
+          <button class="slider__btn team__btn_next slider__btn_next" type="button"></button>
+
         </div>
 
-        <button class="slider__btn slider__btn_next team__btn-next" type="button"></button>
+        <div class="team__item-wrapper">
+          <div class="team__item-inner">
+            <blockquote class="slide-description">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Серёжа Попов</h3>
+                <span class="team__item-jobTitle">Основатель питомника</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Наш питомник занимается разведением Мейн-Кунов на
+                протяжениие 15 лет. Мы в
+                ответе за каждого
+                приобретенного
+                вами питомца</p>
+            </blockquote>
 
+            <blockquote class="slide-description hide">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Иван Васильев</h3>
+                <span class="team__item-jobTitle">Сотрудник питомника</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente
+                iure,
+                magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
+            </blockquote>
+
+            <blockquote class="slide-description hide">
+              <cite>
+                <h3 class="team__item-title slide-description__title">Максим Денисов</h3>
+                <span class="team__item-jobTitle">Грумер</span>
+              </cite>
+              <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur
+                adipisicing
+                elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
+            </blockquote>
+
+            <ul class="team__social social">
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span>Фейсбук</span>
+                  <svg class="team__icon social__icon social__icon_fb  team__icon_fb" width="5" height="12">
+                    <use xlink:href="#icon-fb" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span>Твиттер</span>
+                  <svg class="team__icon social__icon social__icon_tw team__icon_tw" width="16" height="12">
+                    <use xlink:href="#icon-tw" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social__item">
+                <a href="#" class="social__link">
+                  <span display="none">Вконтакте</span>
+                  <svg class="team__icon social__icon social__icon_vk team__icon_vk" width="18" height="10">
+                    <use xlink:href="#icon-vk" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-
-      <div class="team__item_wrapper">
-        <blockquote class="slide-description">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Серёжа Попов</h3>
-            <span class="team__item-jobTitle">Основатель питомника</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Наш питомник занимается разведением Мейн-Кунов на
-            протяжениие 15 лет. Мы в
-            ответе за каждого
-            приобретенного
-            вами питомца</p>
-        </blockquote>
-
-        <blockquote class="slide-description hide">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Иван Васильев</h3>
-            <span class="team__item-jobTitle">Сотрудник питомника</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente iure,
-            magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
-        </blockquote>
-
-        <blockquote class="slide-description hide">
-          <cite>
-            <h3 class="team__item-title slide-description__title">Максим Денисов</h3>
-            <span class="team__item-jobTitle">Грумер</span>
-          </cite>
-          <p class="team__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
-        </blockquote>
-
-        <ul class="team__social social">
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span>Фейсбук</span>
-              <svg class="team__icon social__icon social__icon_fb" width="5" height="12">
-                <use xlink:href="#icon-fb" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span>Твиттер</span>
-              <svg class="team__icon social__icon social__icon_tw" width="16" height="12">
-                <use xlink:href="#icon-tw" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="social__item">
-            <a href="#" class="social__link">
-              <span display="none">Вконтакте</span>
-              <svg class="team__icon social__icon social__icon_vk" width="18" height="10">
-                <use xlink:href="#icon-vk" x="0" y="0"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
-      </div>
-
     </div>
     </div>
   </section>
 
   <section class="faq section section_light">
-    <div class="container section__wrapper">
-      <h2 class="section__title title">Вопрос-Ответ</h2>
-      <p class="faq__description section__description">Мы ответим на самые популярные ваши вопросы</p>
+    <div class="container section__wrapper faq__wrapper">
+      <h2 class="section__title title faq__title">Вопрос-Ответ</h2>
+      <p class="section__description ">Мы ответим на самые популярные ваши вопросы</p>
 
       <div class="faq__list">
         <details class="faq__item" open="open">
-          <summary class="faq__question faq__question_open">
+          <summary class="faq__question faq__question_01 faq__question_open">
             <p class="faq__question-text">С какого возраста можно забирать котенка из питомника?</p>
           </summary>
           <div class="faq__answer">
@@ -598,14 +640,14 @@
 
         <div class="slider__content">
           <div class="reviews__slide slider__slide">
-            <img class="slider__image" src="images/reviews-section-author-mobile@1x.png" width="242" height="166"
+            <img class="slider__image" src="images/review-1-author-tablet@2x.png" width="242" height="166"
               alt="Сотрудник">
           </div>
           <div class="reviews__slide slider__slide hide">
-            <img class="slider__image" src="images/pets-item-1-desktop@2x.png" alt="Мейн-Кун">
+            <img class="slider__image" src="images/review-2-author-tablet@2x.png" alt="Мейн-Кун">
           </div>
           <div class="reviews__slide slider__slide hide">
-            <img class="slider__image" src="images/pets-item-2-desktop@2x.png" alt="Мейн-Кун">
+            <img class="slider__image" src="images/review-3-author-tablet@2x.png" alt="Мейн-Кун">
           </div>
         </div>
 
@@ -613,7 +655,7 @@
       </div>
 
       <div class="reviews__item_wrapper">
-        <blockquote class="slide-description">
+        <blockquote class="reviews__item slide-description hide">
           <cite>
             <h3 class="reviews__item-title slide-description__title">Серёжа Попов</h3>
           </cite>
@@ -624,16 +666,16 @@
             является возможность консультироваться в любое время</p>
         </blockquote>
 
-        <blockquote class="slide-description hide">
+        <blockquote class="reviews__item slide-description ">
           <cite>
-            <h3 class="reviews__item-title slide-description__title">Иван Васильев</h3>
+            <h3 class="reviews__item-title slide-description__title">Васелиса Лазарева</h3>
           </cite>
-          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Adipisci cumque repudiandae illum facere, placeat eius quod molestiae aliquam, suscipit sapiente iure,
-            magni dolores quaerat fugit eaque commodi ipsa! Cupiditate, corrupti!</p>
+          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur,
+            adipisicing elit. Odio adipisci quis dolore quasi reiciendis inventore atque blanditiis totam, ipsam dolor
+            id eaque similique commodi nulla placeat, soluta quos facere exercitationem.</p>
         </blockquote>
 
-        <blockquote class="slide-description hide">
+        <blockquote class="reviews__item slide-description hide">
           <cite>
             <h3 class="reviews__item-title slide-description__title">Максим Денисов</h3>
           </cite>
