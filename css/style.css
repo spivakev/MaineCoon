@@ -124,7 +124,6 @@ h3 {
 .header {
   width: 100%;
   background-color: #181617;
-  background-image: url("../images/header-cat-mobile@2x.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   font-weight: 400;
@@ -156,6 +155,7 @@ h3 {
 @media (max-width: 767px) {
   .header {
     background-size: 275px auto;
+    background-image: url("../images/header-cat-mobile@2x.png");
   }
   .header .header__wrapper {
     padding-top: 28px;
@@ -265,6 +265,73 @@ h3 {
   .header .header__icon_fb {
     width: 5.08px;
     height: 11.1px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .header {
+    background-image: url("../images/header-cat-desktop@2x.png");
+    background-size: 1019px auto;
+    background-position: right 0px bottom 0;
+  }
+  .header .header__wrapper {
+    padding: 47px 82px 65px;
+  }
+  .header .header__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+  .header .header__social {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 104px;
+  }
+  .header .header__social::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 77px;
+    top: 377px;
+    left: 4px;
+    border: 0.5px solid rgba(255, 255, 255, 0.61);
+  }
+  .header .header__social-link {
+    margin-top: 15px;
+    width: 12px;
+    height: 11px;
+  }
+  .header .header__content {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 109px;
+    margin-bottom: 108px;
+  }
+  .header .header__title {
+    margin-top: 18px;
+  }
+  .header .header__description {
+    margin-top: 16px;
+  }
+  .header .header__btn {
+    margin-top: 48px;
   }
 }
 
