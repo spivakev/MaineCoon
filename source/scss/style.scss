@@ -471,7 +471,7 @@ h3 {
 @media(min-width: 1366px) {
   .pets {
     .pets__wrapper {
-      padding: 223px 141px 0 147px;
+      padding: 223px 141px 0 165px;
     }
 
     .pets__btn-prev,
@@ -648,7 +648,6 @@ h3 {
 }
 
 
-
 .breed-features {
   .breed-features__image {
     position: relative;
@@ -745,6 +744,45 @@ h3 {
 }
 
 
+@media (min-width: 1366px) {
+  .breed-features {
+
+    .breed-features__wrapper {
+      padding-top: 80px;
+      padding-bottom: 140px;
+    }
+
+    .breed-features__description {
+      max-width: 735px;
+    }
+
+    .breed-features__description {
+      margin-bottom: 25px;
+    }
+
+    .breed-features__image {
+      width: 700px;
+      padding-left: 84px;
+    }
+
+    .breed-features__image::before {
+      top: 104px;
+      left: 110px;
+      width: 519px;
+      height: 519px;
+    }
+
+    .breed-features__image::after {
+      top: 48px;
+      left: 53px;
+      width: 631px;
+      height: 631px;
+    }
+  }
+}
+
+
+
 .features-list {
   list-style: none;
 
@@ -824,7 +862,7 @@ h3 {
 
     .features-list__item_trained {
       top: 71px;
-      left: 227px;
+      //left: 227px;          раскомментить! или поменять на right -227
       max-width: 132px;
       line-height: 25px;
     }
@@ -857,6 +895,62 @@ h3 {
     .features-list__item_lynx::before {
       top: 5px;
       right: -21px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .features-list {
+
+    .features-list__item::before {
+      width: 15px;
+      height: 15px;
+    }
+
+    .features-list__item_friendly {
+      top: -70px;
+      left: -535px;
+      max-width: 255px;
+      font-size: 14px;
+    }
+
+    .features-list__item_friendly::before {
+      top: 7px;
+      right: -38px;
+    }
+
+    .features-list__item_trained {
+      top: 38px;
+      right: -557px;
+      max-width: 202px;
+    }
+
+    .features-list__item_trained::before {
+      top: 5px;
+      left: -35px;
+    }
+
+    .features-list__item_weight {
+      top: 260px;
+      right: -487px;
+      max-width: 169px;
+    }
+
+    .features-list__item_weight::before {
+      top: 6px;
+      left: -33px;
+    }
+
+    .features-list__item_lynx {
+      top: 217px;
+      left: -510px;
+      max-width: 213px;
+      line-height: 23px;
+    }
+
+    .features-list__item_lynx::before {
+      top: 7px;
+      right: -32px;
     }
   }
 }
