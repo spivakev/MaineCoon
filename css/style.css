@@ -453,9 +453,15 @@ h3 {
   .pets .pets__btn {
     margin-top: 40px;
   }
+  .pets__menu {
+    margin-top: 31px;
+  }
+  .pets__slider {
+    margin-top: 15px;
+  }
 }
 
-@media (min-width: 767px) {
+@media (min-width: 768px) {
   .pets .pets__slide {
     width: 474px;
     height: 494px;
@@ -477,30 +483,72 @@ h3 {
   .pets .pets__btn {
     margin-top: 55px;
   }
-}
-
-@media (max-width: 767px) {
-  .pets__menu {
-    margin-top: 31px;
-  }
-  .pets__slider {
-    margin-top: 15px;
-  }
-}
-
-@media (min-width: 768px) {
-  .pets__wrapper {
+  .pets .pets__wrapper {
     padding-top: 100px;
   }
-  .pets__description {
+  .pets .pets__description {
     max-width: 520px;
     line-height: 26px;
   }
-  .pets__menu {
+  .pets .pets__menu {
     margin-top: 43px;
   }
-  .pets__slider {
+  .pets .pets__slider {
     margin-top: 37px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .pets .pets__wrapper {
+    padding: 223px 141px 0 147px;
+  }
+  .pets .pets__btn-prev,
+  .pets .pets__btn-next {
+    display: none;
+  }
+  .pets .slider__content {
+    width: 100%;
+    max-width: 1065px;
+    display: block;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-count: 2;
+            column-count: 2;
+    -webkit-column-gap: 30px;
+            column-gap: 30px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .pets .pets__slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .pets .pets__slide_top {
+    height: 214px;
+    margin-bottom: 30px;
+  }
+  .pets .pets__slide_bottom {
+    height: 245px;
+  }
+  .pets .pets__slide_right {
+    max-width: 474px;
+    height: 490px;
+  }
+  .pets .slider__image {
+    min-width: auto;
   }
 }
 
