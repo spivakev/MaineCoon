@@ -1073,7 +1073,6 @@ h3 {
 }
 
 @media (min-width: 1366px) {
-
   .advantages {
     .advantages__wrapper {
       padding-top: 83px;
@@ -1097,7 +1096,6 @@ h3 {
       margin-right: 2.928vw;
       margin-bottom: 2.928vw;
     }
-
   }
 }
 
@@ -1287,8 +1285,9 @@ h3 {
   color: rgba(255, 255, 255, 0.72);
 }
 
-.team {
 
+
+.team {
   .team__slider {
     position: relative;
   }
@@ -1296,7 +1295,6 @@ h3 {
   .team__icon {
     fill: white;
   }
-
 }
 
 @media (max-width: 767px) {
@@ -1456,6 +1454,72 @@ h3 {
     .team__icon_vk {
       width: 21px;
       height: 13px;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .team {
+    .team__wrapper {
+      padding-top: 84px;
+      padding-right: 0;
+    }
+
+    .team__description {
+      margin-top: 20px;
+      max-width: 510px;
+    }
+
+    .team__content-wrapper {
+      border: 0;
+      padding: 0;
+      width: 1027px;
+    }
+
+    .team__item-wrapper {
+      position: relative;
+      margin-right: 0;
+      margin-left: auto;
+      width: 660px;
+      padding: 23px 33px 22px 25px;
+      border: 0.5px solid rgba(160, 123, 80, 0.43);
+    }
+
+    .team__item-inner {
+      padding: 69px 95px 68px 99px;
+    }
+
+    .team__item-content {
+      margin-top: 22px;
+    }
+
+    .team__slider {
+      position: absolute;
+      left: 54px;
+      bottom: auto;
+      top: 0;
+
+      .team__btn_prev,
+      .team__btn_next {
+        bottom: 0px;
+      }
+
+      .team__btn_prev {
+        left: -41px;
+      }
+
+      .team__btn_next {
+        right: -41px;
+      }
+    }
+
+    .team__slide {
+      width: 360px;
+      height: 356px;
+    }
+
+    .team__social {
+      margin-top: 41px;
     }
   }
 }
