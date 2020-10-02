@@ -960,27 +960,31 @@ h3 {
   .advantages__icon-consultancy {
     margin-top: 48px;
   }
+
+
 }
 
 .advantages-list {
   list-style: none;
 }
 
-.advantages-list__item {
-  background-color: $secondary-color;
-  text-align: center;
-}
+.advantages-list {
+  .advantages-list__item {
+    background-color: $secondary-color;
+    text-align: center;
+  }
 
-.advantages-list__item_active {
-  background-color: $x-beige;
-}
+  .advantages-list__item_active {
+    background-color: $x-beige;
+  }
 
-.advantages-list__link {
-  color: white;
-}
+  .advantages-list__link {
+    color: white;
+  }
 
-.advantages-list__text {
-  margin: 0 auto;
+  .advantages-list__text {
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1035,14 +1039,9 @@ h3 {
       border-bottom: 18px solid $secondary-color;
     }
 
-    .advantages-list__icon_active {
-      stroke: $x-beige;
-    }
-
     .advantages-list__icon {
       line-height: 26px;
       stroke-width: 1.5;
-      stroke: #1F1C1D;
     }
 
     .advantages__icon-veterinary-service {

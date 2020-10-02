@@ -959,20 +959,20 @@ h3 {
   list-style: none;
 }
 
-.advantages-list__item {
+.advantages-list .advantages-list__item {
   background-color: #1F1C1D;
   text-align: center;
 }
 
-.advantages-list__item_active {
+.advantages-list .advantages-list__item_active {
   background-color: #A07B50;
 }
 
-.advantages-list__link {
+.advantages-list .advantages-list__link {
   color: white;
 }
 
-.advantages-list__text {
+.advantages-list .advantages-list__text {
   margin: 0 auto;
 }
 
@@ -1019,13 +1019,9 @@ h3 {
     border-top: 18px solid #1F1C1D;
     border-bottom: 18px solid #1F1C1D;
   }
-  .advantages .advantages-list__icon_active {
-    stroke: #A07B50;
-  }
   .advantages .advantages-list__icon {
     line-height: 26px;
     stroke-width: 1.5;
-    stroke: #1F1C1D;
   }
   .advantages .advantages__icon-veterinary-service {
     width: 98px;
