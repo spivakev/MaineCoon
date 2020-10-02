@@ -957,7 +957,6 @@ h3 {
 
 
 .advantages {
-
   .advantages__icon-consultancy {
     margin-top: 48px;
   }
@@ -1073,6 +1072,37 @@ h3 {
     }
   }
 }
+
+@media (min-width: 1366px) {
+
+  .advantages {
+    .advantages__wrapper {
+      padding-top: 83px;
+      padding-bottom: 58px;
+    }
+
+    .advantages__description {
+      margin-bottom: 47px;
+    }
+
+    .advantages-list {
+      padding-left: 2.928vw;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .advantages-list__item {
+      margin-bottom: 0;
+      margin-right: 2.928vw;
+      margin-bottom: 2.928vw;
+    }
+
+  }
+}
+
+
 
 .care {
   background-size: cover;
