@@ -500,7 +500,7 @@ h3 {
 
 @media (min-width: 1366px) {
   .pets .pets__wrapper {
-    padding: 223px 141px 0 147px;
+    padding: 223px 141px 0 165px;
   }
   .pets .pets__btn-prev,
   .pets .pets__btn-next {
@@ -780,6 +780,35 @@ h3 {
   }
 }
 
+@media (min-width: 1366px) {
+  .breed-features .breed-features__wrapper {
+    padding-top: 80px;
+    padding-bottom: 140px;
+  }
+  .breed-features .breed-features__description {
+    max-width: 735px;
+  }
+  .breed-features .breed-features__description {
+    margin-bottom: 25px;
+  }
+  .breed-features .breed-features__image {
+    width: 700px;
+    padding-left: 84px;
+  }
+  .breed-features .breed-features__image::before {
+    top: 104px;
+    left: 110px;
+    width: 519px;
+    height: 519px;
+  }
+  .breed-features .breed-features__image::after {
+    top: 48px;
+    left: 53px;
+    width: 631px;
+    height: 631px;
+  }
+}
+
 .features-list {
   list-style: none;
 }
@@ -848,7 +877,6 @@ h3 {
   }
   .features-list .features-list__item_trained {
     top: 71px;
-    left: 227px;
     max-width: 132px;
     line-height: 25px;
   }
@@ -878,6 +906,51 @@ h3 {
   }
 }
 
+@media (min-width: 1366px) {
+  .features-list .features-list__item::before {
+    width: 15px;
+    height: 15px;
+  }
+  .features-list .features-list__item_friendly {
+    top: -70px;
+    left: -535px;
+    max-width: 255px;
+    font-size: 14px;
+  }
+  .features-list .features-list__item_friendly::before {
+    top: 7px;
+    right: -38px;
+  }
+  .features-list .features-list__item_trained {
+    top: 38px;
+    right: -557px;
+    max-width: 202px;
+  }
+  .features-list .features-list__item_trained::before {
+    top: 5px;
+    left: -35px;
+  }
+  .features-list .features-list__item_weight {
+    top: 260px;
+    right: -487px;
+    max-width: 169px;
+  }
+  .features-list .features-list__item_weight::before {
+    top: 6px;
+    left: -33px;
+  }
+  .features-list .features-list__item_lynx {
+    top: 217px;
+    left: -510px;
+    max-width: 213px;
+    line-height: 23px;
+  }
+  .features-list .features-list__item_lynx::before {
+    top: 7px;
+    right: -32px;
+  }
+}
+
 .advantages .advantages__icon-consultancy {
   margin-top: 48px;
 }
@@ -886,20 +959,20 @@ h3 {
   list-style: none;
 }
 
-.advantages-list__item {
+.advantages-list .advantages-list__item {
   background-color: #1F1C1D;
   text-align: center;
 }
 
-.advantages-list__item_active {
+.advantages-list .advantages-list__item_active {
   background-color: #A07B50;
 }
 
-.advantages-list__link {
+.advantages-list .advantages-list__link {
   color: white;
 }
 
-.advantages-list__text {
+.advantages-list .advantages-list__text {
   margin: 0 auto;
 }
 
@@ -946,13 +1019,9 @@ h3 {
     border-top: 18px solid #1F1C1D;
     border-bottom: 18px solid #1F1C1D;
   }
-  .advantages .advantages-list__icon_active {
-    stroke: #A07B50;
-  }
   .advantages .advantages-list__icon {
     line-height: 26px;
     stroke-width: 1.5;
-    stroke: #1F1C1D;
   }
   .advantages .advantages__icon-veterinary-service {
     width: 98px;
@@ -975,6 +1044,36 @@ h3 {
   }
   .advantages .advantages-list__text {
     width: 77%;
+  }
+}
+
+@media (min-width: 1366px) {
+  .advantages .advantages__wrapper {
+    padding-top: 83px;
+    padding-bottom: 58px;
+  }
+  .advantages .advantages__description {
+    margin-bottom: 47px;
+  }
+  .advantages .advantages-list {
+    padding-left: 2.928vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .advantages .advantages-list__item {
+    margin-bottom: 0;
+    margin-right: 2.928vw;
+    margin-bottom: 2.928vw;
   }
 }
 
@@ -1078,6 +1177,66 @@ h3 {
   .care-list .care-list__content {
     font-size: 14px;
     line-height: 23px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .care {
+    background-image: url("../images/care-section-desktop@2x.png");
+  }
+  .care .care__wrapper {
+    padding-top: 85px;
+    padding-bottom: 55px;
+  }
+  .care .care__title {
+    max-width: 65%;
+    margin-bottom: 48px;
+  }
+  .care-list {
+    width: 1158px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .care-list .care-list__item {
+    width: 559px;
+    margin-bottom: 43px;
+  }
+  .care-list .care-list__link {
+    padding: 37px 19% 21px 59px;
+    min-height: 165px;
+  }
+  .care-list .care-list__title {
+    margin-bottom: 9px;
+  }
+  .care-list .care-list__item_wool {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .care-list .care-list__item_ears {
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .care-list .care-list__item_claws {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .care-list .care-list__item_nutrition {
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
 }
 
@@ -1227,6 +1386,56 @@ h3 {
   .team .team__icon_vk {
     width: 21px;
     height: 13px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .team .team__wrapper {
+    padding: 83px 0 72px;
+  }
+  .team .team__description {
+    margin-top: 20px;
+    max-width: 505px;
+  }
+  .team .team__content-wrapper {
+    border: 0;
+    padding: 0;
+    width: 1027px;
+  }
+  .team .team__item-wrapper {
+    margin-right: 0;
+    margin-left: auto;
+    width: 660px;
+    padding: 23px 33px 22px 25px;
+    border: 0.5px solid rgba(160, 123, 80, 0.43);
+  }
+  .team .team__item-inner {
+    padding: 69px 95px 68px 99px;
+  }
+  .team .team__item-content {
+    margin-top: 22px;
+  }
+  .team .team__slider {
+    left: 54px;
+    bottom: auto;
+    top: 0;
+  }
+  .team .team__slider .team__btn_prev,
+  .team .team__slider .team__btn_next {
+    top: 52%;
+  }
+  .team .team__slider .team__btn_prev {
+    left: -133px;
+  }
+  .team .team__slider .team__btn_next {
+    right: -691px;
+  }
+  .team .team__slide {
+    width: 360px;
+    height: 356px;
+  }
+  .team .team__social {
+    margin-top: 41px;
   }
 }
 
