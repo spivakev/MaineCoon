@@ -1224,6 +1224,61 @@ h3 {
 }
 
 
+@media (min-width: 1366px) {
+  .care {
+    background-image: url("../images/care-section-desktop@2x.png");
+
+    .care__wrapper {
+      padding-top: 85px;
+      padding-bottom: 55px;
+    }
+
+    .care__title {
+      max-width: 65%;
+      margin-bottom: 48px;
+    }
+  }
+
+  .care-list {
+    width: 1158px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .care-list__item {
+      width: 559px;
+      margin-bottom: 43px;
+    }
+
+    .care-list__link {
+      padding: 37px 19% 21px 59px;
+      min-height: 165px;
+    }
+
+    .care-list__title {
+      margin-bottom: 9px;
+    }
+
+    .care-list__item_wool {
+      order: 1;
+    }
+
+    .care-list__item_ears {
+      order: 3;
+    }
+
+    .care-list__item_claws {
+      order: 2;
+    }
+
+    .care-list__item_nutrition {
+      order: 4;
+    }
+  }
+}
+
+
 .slide-description__title {
   font-style: normal;
   font-weight: 500;
