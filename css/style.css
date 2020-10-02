@@ -1391,12 +1391,11 @@ h3 {
 
 @media (min-width: 1366px) {
   .team .team__wrapper {
-    padding-top: 84px;
-    padding-right: 0;
+    padding: 83px 0 72px;
   }
   .team .team__description {
     margin-top: 20px;
-    max-width: 510px;
+    max-width: 505px;
   }
   .team .team__content-wrapper {
     border: 0;
@@ -1404,7 +1403,6 @@ h3 {
     width: 1027px;
   }
   .team .team__item-wrapper {
-    position: relative;
     margin-right: 0;
     margin-left: auto;
     width: 660px;
@@ -1418,20 +1416,19 @@ h3 {
     margin-top: 22px;
   }
   .team .team__slider {
-    position: absolute;
     left: 54px;
     bottom: auto;
     top: 0;
   }
   .team .team__slider .team__btn_prev,
   .team .team__slider .team__btn_next {
-    bottom: 0px;
+    top: 52%;
   }
   .team .team__slider .team__btn_prev {
-    left: -41px;
+    left: -133px;
   }
   .team .team__slider .team__btn_next {
-    right: -41px;
+    right: -691px;
   }
   .team .team__slide {
     width: 360px;

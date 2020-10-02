@@ -1461,13 +1461,12 @@ h3 {
 @media (min-width: 1366px) {
   .team {
     .team__wrapper {
-      padding-top: 84px;
-      padding-right: 0;
+      padding: 83px 0 72px;
     }
 
     .team__description {
       margin-top: 20px;
-      max-width: 510px;
+      max-width: 505px;
     }
 
     .team__content-wrapper {
@@ -1477,7 +1476,6 @@ h3 {
     }
 
     .team__item-wrapper {
-      position: relative;
       margin-right: 0;
       margin-left: auto;
       width: 660px;
@@ -1494,22 +1492,21 @@ h3 {
     }
 
     .team__slider {
-      position: absolute;
       left: 54px;
       bottom: auto;
       top: 0;
 
       .team__btn_prev,
       .team__btn_next {
-        bottom: 0px;
+        top: 52%;
       }
 
       .team__btn_prev {
-        left: -41px;
+        left: -133px;
       }
 
       .team__btn_next {
-        right: -41px;
+        right: -691px;
       }
     }
 
