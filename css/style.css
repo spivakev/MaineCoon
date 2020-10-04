@@ -1567,6 +1567,7 @@ h3 {
     margin-top: 53px;
     padding-left: 111px;
     width: 93%;
+    max-width: 929px;
     counter-reset: faqItemCount;
   }
   .faq .faq__item {
@@ -1621,6 +1622,35 @@ h3 {
   }
   .faq .faq__paragraph:last-of-type {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: 1366px) {
+  .faq .faq__wrapper {
+    padding-top: 73px;
+  }
+  .faq .faq__list {
+    padding-left: 136px;
+    width: 929px;
+  }
+  .faq .faq__item {
+    margin-bottom: 37px;
+  }
+  .faq .faq__question {
+    padding: 47px 203px 43px 43px;
+  }
+  .faq .faq__answer {
+    padding: 37px 107px 43px 43px;
+  }
+  .faq .faq__item::before {
+    top: 15px;
+    left: -113px;
+    font-size: 70px;
+    line-height: 82px;
+  }
+  .faq .faq__question::after,
+  .faq .faq__question_open::after {
+    width: 13%;
   }
 }
 
