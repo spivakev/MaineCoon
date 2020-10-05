@@ -1919,7 +1919,7 @@ h3 {
     }
 
     .reviews__btn_prev {
-      left: -93px; // -89 pixel perfect
+      left: -93px; 
       background-image: url(../images/svg/long-arrow-prev.svg);
     }
 
@@ -2085,6 +2085,65 @@ h3 {
 
     .footer__logo {
       display: none;
+    }
+  }
+}
+
+@media (min-width: 1366px) {
+  .footer {
+
+    .footer__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: baseline; 
+
+    }
+
+    .footer__container {
+      padding-top: 67px;
+      padding-bottom: 52px; 
+      margin: 0 auto;
+      width: 72%;
+    }
+
+    .footer__logo {
+      order: 1;
+      display: flex;
+      width: 47px;
+      height: 21px;
+    }
+
+    .footer__social {
+      order: 2;
+      transform: translateX(8px) translateY(-5px);
+    }
+
+    .footer__address {
+      order: 3;
+      max-width: 300px;
+      transform: translateX(5px);
+    }
+
+    .footer__phone {
+      order: 4;
+      transform: translateX(-35px);
+    }
+
+    .social__icon_fb {
+      width: 7px;
+      height: 15px;
+    }
+
+    .social__icon_tw {
+      width: 20px;
+      height: 14px;
+    }
+
+    .social__icon_vk {
+      width: 21px;
+      height: 12px;
     }
   }
 }
