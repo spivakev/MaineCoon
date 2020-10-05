@@ -390,16 +390,16 @@ h3 {
       height: 83.125vw;
     }
 
-    .pets__btn-prev,
-    .pets__btn-next {
+    .pets__btn_prev,
+    .pets__btn_next {
       top: 50.5%;
     }
 
-    .pets__btn-prev {
+    .pets__btn_prev {
       left: -1px;
     }
 
-    .pets__btn-next {
+    .pets__btn_next {
       right: -1px;
     }
 
@@ -432,16 +432,16 @@ h3 {
       object-fit: cover;
     }
 
-    .pets__btn-prev,
-    .pets__btn-next {
+    .pets__btn_prev,
+    .pets__btn_next {
       top: 47.5%;
     }
 
-    .pets__btn-prev {
+    .pets__btn_prev {
       left: -118px;
     }
 
-    .pets__btn-next {
+    .pets__btn_next {
       right: -118px;
     }
 
@@ -474,8 +474,8 @@ h3 {
       padding: 223px 141px 0 165px;
     }
 
-    .pets__btn-prev,
-    .pets__btn-next {
+    .pets__btn_prev,
+    .pets__btn_next {
       display: none;
     }
 
@@ -1761,8 +1761,6 @@ h3 {
 }
 
 
-
-
 .reviews {
   .reviews__slider {
     position: relative;
@@ -1773,7 +1771,7 @@ h3 {
   }
 
   .reviews__item_wrapper {
-    background-color: $teriary-color;
+    background-color: $primary-color;
   }
 
   .reviews__item-title {
@@ -1851,19 +1849,16 @@ h3 {
       margin-top: 17px;
     }
 
-    .reviews__btn-next {
+    .reviews__btn_next {
       right: -25px;
     }
 
-    .reviews__btn-prev {
+    .reviews__btn_prev {
       left: -25px;
     }
 
     .reviews__footer {
       margin: 23px auto 0;
-    }
-
-    .reviews__content-wrapper {
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -1884,7 +1879,7 @@ h3 {
       padding-left: 44px; //убрать или вынести в общий блок?
     }
 
-    .reviews__slider {
+    .reviews__content-wrapper {
       margin-top: 49px;
     }
 
@@ -1912,24 +1907,23 @@ h3 {
 
     .reviews__item-content {
       margin-top: 13px;
-      // width: 78%;
       line-height: 23px;
-      text-align: center;
+      text-align: left;
     }
 
-    .reviews__btn-prev,
-    .reviews__btn-next {
+    .reviews__btn_prev,
+    .reviews__btn_next {
       width: 59px;
       height: 16px;
       top: 134px;
     }
 
-    .reviews__btn-prev {
+    .reviews__btn_prev {
       left: -93px; // -89 pixel perfect
       background-image: url(../images/svg/long-arrow-prev.svg);
     }
 
-    .reviews__btn-next {
+    .reviews__btn_next {
       right: -93px;
       background-image: url(../images/svg/long-arrow-next.svg);
     }
@@ -1943,19 +1937,69 @@ h3 {
       margin-right: 32px;
       vertical-align: top;
     }
+  }
+}
 
-    .footer__address {
-      color: #D6CCC2;
+
+@media(min-width: 1366px) {
+  .reviews {
+    .reviews__wrapper {
+      padding-top: 73px;
+      padding-bottom: 112px;
     }
 
-    .footer__phone {
-      color: #FDF2E6;
+    .reviews__content-wrapper {
+      position: relative;
+      margin-top: 59px;
+      width: 1057px;
+      max-width: 1057px;
     }
 
-    .footer__icon {
-      fill: $x-beige;
+    .reviews__item_wrapper {
+      margin: 0;
+      padding: 109px 47px 92px 105px;
+      margin-right: 0;
+      margin-left: auto;
+      width: 640px;
+      text-align: left;
     }
 
+    .reviews__item-content {
+      min-height: 92px;
+    }
+
+    .reviews__slider {
+      position: absolute;
+      top: 46px;
+      left: 36px;
+    }
+
+    .reviews__slide {
+      width: 481px;
+      height: 331px;
+    }
+
+    .reviews__btn_prev,
+    .reviews__btn_next {
+      top: 52%;
+      width: 12px;
+      height: 30px;
+    }
+
+    .reviews__btn_prev {
+      left: -108px;
+      background-image: url(../images/svg/arrow-prev.svg);
+    }
+
+    .reviews__btn_next {
+      right: -595px;
+      background-image: url(../images/svg/arrow-next.svg);
+    }
+
+    .reviews__footer {
+      margin-top: 36px;
+      padding-left: 40px;
+    }
   }
 }
 
