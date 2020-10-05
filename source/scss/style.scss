@@ -420,8 +420,6 @@ h3 {
 }
 
 @media (min-width: 768px) {
-  //(max-width: 1365px) {
-
   .pets {
     .pets__slide {
       width: 474px; //530px; //
@@ -1458,6 +1456,7 @@ h3 {
   }
 }
 
+
 @media (min-width: 1366px) {
   .team {
     .team__wrapper {
@@ -1754,7 +1753,7 @@ h3 {
 
     .faq__question::after,
     .faq__question_open::after {
-      width: 13%; // 106 на 110px
+      width: 13%;
     }
 
   }
@@ -1876,7 +1875,7 @@ h3 {
     .reviews__wrapper {
       padding-top: 71px;
       padding-bottom: 87px;
-      padding-left: 44px; //убрать или вынести в общий блок?
+      padding-left: 44px;
     }
 
     .reviews__content-wrapper {
@@ -1897,7 +1896,7 @@ h3 {
     .reviews__item_wrapper {
       padding: 148px 40px 28px;
       margin-top: -113px;
-      width: 83%; //82.95
+      width: 83%;
     }
 
     .reviews__item-title {
@@ -1919,7 +1918,7 @@ h3 {
     }
 
     .reviews__btn_prev {
-      left: -93px; 
+      left: -93px;
       background-image: url(../images/svg/long-arrow-prev.svg);
     }
 
@@ -2097,13 +2096,13 @@ h3 {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-items: baseline; 
+      align-items: baseline;
 
     }
 
     .footer__container {
       padding-top: 67px;
-      padding-bottom: 52px; 
+      padding-bottom: 52px;
       margin: 0 auto;
       width: 72%;
     }
