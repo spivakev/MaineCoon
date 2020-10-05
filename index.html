@@ -633,83 +633,91 @@
   <section class="reviews section section_light">
     <div class="container section__wrapper reviews__wrapper">
       <h2 class="section__title title">Отзывы</h2>
+      <div class="reviews__content-wrapper">
+        <div class="reviews__slider slider">
 
-      <div class="reviews__slider slider">
+          <button class="slider__btn slider__btn_prev reviews__btn_prev" type="button"></button>
 
-        <button class="slider__btn slider__btn_prev reviews__btn-prev" type="button"></button>
+          <div class="slider__content">
+            <div class="reviews__slide slider__slide">
+              <img class="slider__image" src="images/review-1-author-tablet@2x.png" width="242" height="166"
+                alt="Сотрудник">
+            </div>
+            <div class="reviews__slide slider__slide hide">
+              <img class="slider__image" src="images/review-2-author-tablet@2x.png" alt="Мейн-Кун">
+            </div>
+            <div class="reviews__slide slider__slide hide">
+              <img class="slider__image" src="images/review-3-author-tablet@2x.png" alt="Мейн-Кун">
+            </div>
+          </div>
 
-        <div class="slider__content">
-          <div class="reviews__slide slider__slide">
-            <img class="slider__image" src="images/review-1-author-tablet@2x.png" width="242" height="166"
-              alt="Сотрудник">
-          </div>
-          <div class="reviews__slide slider__slide hide">
-            <img class="slider__image" src="images/review-2-author-tablet@2x.png" alt="Мейн-Кун">
-          </div>
-          <div class="reviews__slide slider__slide hide">
-            <img class="slider__image" src="images/review-3-author-tablet@2x.png" alt="Мейн-Кун">
-          </div>
+          <button class="slider__btn slider__btn_next reviews__btn_next" type="button"></button>
         </div>
 
-        <button class="slider__btn slider__btn_next reviews__btn-next" type="button"></button>
-      </div>
+        <div class="reviews__item_wrapper">
+          <blockquote class="reviews__item slide-description">
+            <cite>
+              <h3 class="reviews__item-title slide-description__title">Серёжа Попов</h3>
+            </cite>
+            <p class="reviews__item-content slide-description__content">Я выражаю огромную благодарность вашему
+              питомнику.
+              Мой
+              Феликс невероятно
+              умен и воспитан. Огромным плюсом питомника
+              является возможность консультироваться в любое время</p>
+          </blockquote>
 
-      <div class="reviews__item_wrapper">
-        <blockquote class="reviews__item slide-description hide">
-          <cite>
-            <h3 class="reviews__item-title slide-description__title">Серёжа Попов</h3>
-          </cite>
-          <p class="reviews__item-content slide-description__content">Я выражаю огромную благодарность вашему питомнику.
-            Мой
-            Феликс невероятно
-            умен и воспитан. Огромным плюсом питомника
-            является возможность консультироваться в любое время</p>
-        </blockquote>
+          <blockquote class="reviews__item slide-description hide">
+            <cite>
+              <h3 class="reviews__item-title slide-description__title">Васелиса Лазарева</h3>
+            </cite>
+            <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur,
+              adipisicing elit. Odio adipisci quis dolore quasi reiciendis inventore atque blanditiis totam, ipsam dolor
+              id eaque similique commodi nulla placeat, soluta quos facere exercitationem.</p>
+          </blockquote>
 
-        <blockquote class="reviews__item slide-description ">
-          <cite>
-            <h3 class="reviews__item-title slide-description__title">Васелиса Лазарева</h3>
-          </cite>
-          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur,
-            adipisicing elit. Odio adipisci quis dolore quasi reiciendis inventore atque blanditiis totam, ipsam dolor
-            id eaque similique commodi nulla placeat, soluta quos facere exercitationem.</p>
-        </blockquote>
+          <blockquote class="reviews__item slide-description hide">
+            <cite>
+              <h3 class="reviews__item-title slide-description__title">Максим Денисов</h3>
+            </cite>
+            <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur
+              adipisicing
+              elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
+          </blockquote>
 
-        <blockquote class="reviews__item slide-description hide">
-          <cite>
-            <h3 class="reviews__item-title slide-description__title">Максим Денисов</h3>
-          </cite>
-          <p class="reviews__item-content slide-description__content">Lorem ipsum dolor sit amet consectetur adipisicing
-            elit. Rerum eos provident unde eum hic ipsa inventore laborum, deleniti atque similique?</p>
-        </blockquote>
+          <div class="reviews__footer">
+            <time class="reviews__date" datetime="2018-05-24" class="reviews__date">24 мая 2018</time>
 
-        <div class="reviews__content-wrapper reviews__footer">
-          <time class="reviews__date" datetime="2018-05-24" class="reviews__date">24 мая 2018</time>
-
-          <ul class="reviews__social social">
-            <li class="reviews__social-item social__item">
-              <a href="#" class="reviews__social-link social__link">
-                <span>Твиттер</span>
-                <svg class="reviews__icon social__icon social__icon_tw" width="16" height="12">
-                  <use xlink:href="#icon-tw" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="reviews__social-item social__item">
-              <a href="#" class="reviews__social-link social__link">
-                <span display="none">Вконтакте</span>
-                <svg class="reviews__icon social__icon social__icon_vk" width="18" height="10">
-                  <use xlink:href="#icon-vk" x="0" y="0"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+            <ul class="reviews__social social">
+              <li class="reviews__social-item social__item">
+                <a href="#" class="reviews__social-link social__link">
+                  <span>Твиттер</span>
+                  <svg class="reviews__icon social__icon social__icon_tw" width="16" height="12">
+                    <use xlink:href="#icon-tw" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="reviews__social-item social__item">
+                <a href="#" class="reviews__social-link social__link">
+                  <span display="none">Вконтакте</span>
+                  <svg class="reviews__icon social__icon social__icon_vk" width="18" height="10">
+                    <use xlink:href="#icon-vk" x="0" y="0"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   </section>
+
+
+
+
+
   <footer class="footer">
-    <div class="footer__container">
+    <div class="footer__wrapper footer__container">
       <p class="footer__address">Новосибирск, Пушкинский проспект, 19</p>
       <a class="footer__phone">+7 (383) 900-64-65</a>
 
@@ -740,7 +748,7 @@
         </li>
       </ul>
       <a class="footer__logo logo">
-        <img src="images/svg/icon-crown.svg" width="58" height="27" alt="Логотип">
+        <img src="images/svg/icon-crown.svg" width="49" height="23" alt="Логотип">
       </a>
     </div>
   </footer>
