@@ -380,8 +380,8 @@ h3 {
   border: 0.5px solid #a07b50;
   text-decoration: none;
   color: #ffffff;
-  -webkit-transition: all 0.25s ease-out;
-  transition: all 0.25s ease-out;
+  -webkit-transition: all 0.28s ease-out;
+  transition: all 0.28s ease-out;
 }
 
 .btn_ghost:hover {
@@ -589,8 +589,8 @@ h3 {
   font-family: Roboto;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.2);
-  -webkit-transition: 0.25s ease-out;
-  transition: 0.25s ease-out;
+  -webkit-transition: 0.28s ease-out;
+  transition: 0.28s ease-out;
 }
 
 .menu .menu__link:active {
@@ -989,14 +989,33 @@ h3 {
 .advantages-list .advantages-list__item {
   background-color: #1f1c1d;
   text-align: center;
+  -webkit-transition: all 0.28s ease-out;
+  transition: all 0.28s ease-out;
 }
 
-.advantages-list .advantages-list__item_active {
+.advantages-list .advantages-list__item:hover {
   background-color: #a07b50;
+}
+
+.advantages-list .advantages-list__item:hover .advantages-list__icon {
+  fill: #ffffff;
+  stroke: #a07b50;
+}
+
+.advantages-list .advantages-list__item:active {
+  opacity: 75%;
 }
 
 .advantages-list .advantages-list__link {
   color: white;
+}
+
+.advantages-list .advantages-list__icon {
+  fill: #a07b50;
+  stroke-width: 1.5;
+  stroke: #1f1c1d;
+  -webkit-transition: fill 0.28s ease-out, stroke 0.28s ease-out;
+  transition: fill 0.28s ease-out, stroke 0.28s ease-out;
 }
 
 .advantages-list .advantages-list__text {
@@ -1048,7 +1067,6 @@ h3 {
   }
   .advantages .advantages-list__icon {
     line-height: 26px;
-    stroke-width: 1.5;
   }
   .advantages .advantages__icon-veterinary-service {
     width: 98px;
@@ -1067,7 +1085,6 @@ h3 {
     height: 110px;
     margin-top: 47px;
     margin-bottom: 28px;
-    stroke: #1f1c1d;
   }
   .advantages .advantages-list__text {
     width: 77%;
