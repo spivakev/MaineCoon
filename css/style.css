@@ -121,6 +121,12 @@ h3 {
   }
 }
 
+.logo:active,
+.social__link:active,
+.slider__btn:active {
+  opacity: 70%;
+}
+
 .header {
   width: 100%;
   background-color: #181617;
@@ -583,9 +589,19 @@ h3 {
   font-family: Roboto;
   font-weight: 500;
   color: rgba(255, 255, 255, 0.2);
+  -webkit-transition: 0.25s ease-out;
+  transition: 0.25s ease-out;
+}
+
+.menu .menu__link:active {
+  opacity: 50%;
 }
 
 .menu .menu__link_active {
+  color: white;
+}
+
+.menu .menu__link:hover {
   color: white;
 }
 
@@ -1094,6 +1110,10 @@ h3 {
 
 .care .care-list {
   list-style: none;
+}
+
+.care .care-list__item:active {
+  opacity: 70%;
 }
 
 .care .care-list__link {
