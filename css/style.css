@@ -89,7 +89,7 @@ h3 {
   font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-weight: 300;
-  color: #A07B50;
+  color: #a07b50;
   text-align: center;
 }
 
@@ -336,7 +336,7 @@ h3 {
 }
 
 .title {
-  font-family: 'Yeseva One', cursive;
+  font-family: "Yeseva One", cursive;
   font-weight: normal;
   color: #ffffff;
 }
@@ -371,9 +371,20 @@ h3 {
 }
 
 .btn_ghost {
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid #a07b50;
   text-decoration: none;
   color: #ffffff;
+  -webkit-transition: all 0.25s ease-out;
+  transition: all 0.25s ease-out;
+}
+
+.btn_ghost:hover {
+  color: #a07b50;
+  border-color: white;
+}
+
+.btn_ghost:active {
+  opacity: 75%;
 }
 
 .section__wrapper {
@@ -400,7 +411,7 @@ h3 {
 }
 
 .section_light {
-  background-color: #1F1C1D;
+  background-color: #1f1c1d;
 }
 
 .section__title {
@@ -725,7 +736,7 @@ h3 {
   position: absolute;
   z-index: -1;
   border-radius: 50%;
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid #a07b50;
 }
 
 @media (max-width: 767px) {
@@ -822,7 +833,7 @@ h3 {
   content: "";
   position: absolute;
   border-radius: 50%;
-  background-color: #A07B50;
+  background-color: #a07b50;
 }
 
 .features-list .features-list__item:last-child {
@@ -960,12 +971,12 @@ h3 {
 }
 
 .advantages-list .advantages-list__item {
-  background-color: #1F1C1D;
+  background-color: #1f1c1d;
   text-align: center;
 }
 
 .advantages-list .advantages-list__item_active {
-  background-color: #A07B50;
+  background-color: #a07b50;
 }
 
 .advantages-list .advantages-list__link {
@@ -981,7 +992,7 @@ h3 {
     margin-bottom: 30px;
     min-height: 248px;
     width: 290px;
-    border: 15px solid #1F1C1D;
+    border: 15px solid #1f1c1d;
   }
   .advantages__title {
     max-width: 230px;
@@ -1014,10 +1025,10 @@ h3 {
     margin-bottom: 45px;
     min-height: 308px;
     width: 360px;
-    border-left: 20px solid #1F1C1D;
-    border-right: 20px solid #1F1C1D;
-    border-top: 18px solid #1F1C1D;
-    border-bottom: 18px solid #1F1C1D;
+    border-left: 20px solid #1f1c1d;
+    border-right: 20px solid #1f1c1d;
+    border-top: 18px solid #1f1c1d;
+    border-bottom: 18px solid #1f1c1d;
   }
   .advantages .advantages-list__icon {
     line-height: 26px;
@@ -1040,7 +1051,7 @@ h3 {
     height: 110px;
     margin-top: 47px;
     margin-bottom: 28px;
-    stroke: #1F1C1D;
+    stroke: #1f1c1d;
   }
   .advantages .advantages-list__text {
     width: 77%;
@@ -1088,7 +1099,7 @@ h3 {
 .care .care-list__link {
   position: relative;
   display: block;
-  border: 0.5px solid #A07B50;
+  border: 0.5px solid #a07b50;
   text-align: left;
   background: rgba(0, 0, 0, 0.3);
 }
@@ -1100,8 +1111,8 @@ h3 {
   top: 0px;
   right: 0px;
   height: 100%;
-  background-color: #A07B50;
-  border-left: 1px solid #A07B50;
+  background-color: #a07b50;
+  border-left: 1px solid #a07b50;
   background-image: url("../images/svg/arrowDetails.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -1111,7 +1122,7 @@ h3 {
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
-  color: #A07B50;
+  color: #a07b50;
 }
 
 .care .care-list__content {
@@ -1283,7 +1294,7 @@ h3 {
     margin-top: -65px;
     padding-top: 65px;
     padding-bottom: 15px;
-    background-color: #1F1C1D;
+    background-color: #1f1c1d;
   }
   .team .team__item-title {
     margin-top: 13px;
@@ -1353,7 +1364,7 @@ h3 {
   .team .team__item-inner {
     width: 100%;
     padding: 72px 95px 68px 109px;
-    background-color: #1F1C1D;
+    background-color: #1f1c1d;
     text-align: left;
   }
   .team .team__item-title {
@@ -1503,19 +1514,19 @@ h3 {
 
 .faq .faq__question::after {
   border: 0;
-  border-left: 0.5px solid #A07B50;
+  border-left: 0.5px solid #a07b50;
   background-image: url("../images/svg/closedQuestion.svg");
 }
 
 .faq .faq__question_open::after {
-  background-color: #A07B50;
+  background-color: #a07b50;
   background-image: url("../images/svg/openedQuestion.svg");
 }
 
 .faq .faq__question,
 .faq .faq__answer {
-  border: 0.5px solid #A07B50;
-  color: #DDD0C3;
+  border: 0.5px solid #a07b50;
+  color: #ddd0c3;
   text-align: left;
 }
 
@@ -1584,7 +1595,7 @@ h3 {
     font-weight: bold;
     font-size: 50px;
     line-height: 59px;
-    color: #A07B50;
+    color: #a07b50;
   }
   .faq .faq__question {
     padding: 17px 73px 16px 27px;
@@ -1683,7 +1694,7 @@ h3 {
 }
 
 .reviews .reviews__icon {
-  fill: #A07B50;
+  fill: #a07b50;
   margin: 0 auto;
 }
 
@@ -1869,11 +1880,11 @@ h3 {
 }
 
 .footer .footer__phone {
-  color: #FDF2E6;
+  color: #fdf2e6;
 }
 
 .footer .footer__icon {
-  fill: #A07B50;
+  fill: #a07b50;
 }
 
 @media (max-width: 767px) {
@@ -1884,14 +1895,14 @@ h3 {
     margin-bottom: 11px;
   }
   .footer .footer__phone {
-    color: #FDF2E6;
+    color: #fdf2e6;
   }
   .footer .footer__social {
     margin-top: 18px;
     margin-bottom: 23px;
   }
   .footer .footer__icon {
-    fill: #A07B50;
+    fill: #a07b50;
   }
   .footer .footer__social-item {
     margin-right: 20px;
