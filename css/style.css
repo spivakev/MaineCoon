@@ -127,6 +127,11 @@ h3 {
   opacity: 70%;
 }
 
+.slider__btn:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
 .header {
   width: 100%;
   background-color: #181617;
@@ -144,7 +149,7 @@ h3 {
   margin: 0 auto;
 }
 
-.header .header__logo-img {
+.header .header__logo-icon {
   width: 100%;
   height: auto;
 }
@@ -153,9 +158,17 @@ h3 {
   display: block;
 }
 
-.logo .header__logo-img {
+.logo .logo__icon {
   width: 100%;
   height: auto;
+  max-height: 100%;
+  fill: #a07b50;
+  -webkit-transition: fill 0.28s ease-out;
+  transition: fill 0.28s ease-out;
+}
+
+.logo:hover .logo__icon {
+  fill: #ffffff;
 }
 
 @media (max-width: 767px) {
@@ -256,6 +269,11 @@ h3 {
   }
   .header .header__icon {
     fill: white;
+    -webkit-transition: fill 0.28s ease-out;
+    transition: fill 0.28s ease-out;
+  }
+  .header .header__icon:hover {
+    fill: #a07b50;
   }
   .header .header__icon:last-of-type {
     margin-right: 0;
@@ -1129,6 +1147,11 @@ h3 {
   list-style: none;
 }
 
+.care .care-list__item:hover {
+  -webkit-filter: brightness(130%);
+          filter: brightness(130%);
+}
+
 .care .care-list__item:active {
   opacity: 70%;
 }
@@ -1301,8 +1324,18 @@ h3 {
   position: relative;
 }
 
+.team .team__item-jobTitle {
+  display: block;
+}
+
 .team .team__icon {
   fill: white;
+  -webkit-transition: fill 0.28s ease-out;
+  transition: fill 0.28s ease-out;
+}
+
+.team .team__icon:hover {
+  fill: #a07b50;
 }
 
 @media (max-width: 767px) {
@@ -1534,6 +1567,11 @@ h3 {
   font-weight: bold;
 }
 
+.faq .faq__question:hover {
+  -webkit-filter: brightness(120%);
+          filter: brightness(120%);
+}
+
 .faq .faq__question::-webkit-details-marker {
   display: none;
 }
@@ -1732,6 +1770,8 @@ h3 {
 
 .reviews .reviews__icon {
   fill: #a07b50;
+  -webkit-transition: fill 0.28 ease-out;
+  transition: fill 0.28 ease-out;
   margin: 0 auto;
 }
 
@@ -1743,6 +1783,16 @@ h3 {
   border: 0.5px solid rgba(160, 123, 80, 0.27);
   width: 28px;
   height: 28px;
+  -webkit-transition: border 0.28 ease-out;
+  transition: border 0.28 ease-out;
+}
+
+.reviews .reviews__social-link:hover {
+  border: 0.5px solid #ffffff;
+}
+
+.reviews .reviews__social-link:hover .reviews__icon {
+  fill: #ffffff;
 }
 
 .reviews .reviews__item-content {
@@ -1922,6 +1972,12 @@ h3 {
 
 .footer .footer__icon {
   fill: #a07b50;
+  -webkit-transition: fill 0.28 ease-out;
+  transition: fill 0.28 ease-out;
+}
+
+.footer .footer__icon:hover {
+  fill: #ffffff;
 }
 
 @media (max-width: 767px) {
