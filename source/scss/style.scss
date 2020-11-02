@@ -919,7 +919,7 @@ h3 {
     }
 
     .features-list__item_friendly {
-      top: 22px;
+      top: 35px;
       left: -408px;
       max-width: 255px;
       font-size: 14px;
@@ -931,7 +931,7 @@ h3 {
     }
 
     .features-list__item_trained {
-      top: 88px;
+      top: 101px;
       right: -482px;
       max-width: 202px;
     }
@@ -942,8 +942,8 @@ h3 {
     }
 
     .features-list__item_weight {
-      top: 259px;
-      right: -445px;
+      top: 272px;
+      right: -444px;
       max-width: 169px;
     }
 
@@ -953,7 +953,7 @@ h3 {
     }
 
     .features-list__item_lynx {
-      top: 170px;
+      top: 183px;
       left: -383px;
       max-width: 213px;
       line-height: 23px;
@@ -1342,7 +1342,7 @@ h3 {
     }
 
     .team__slide {
-      width: 50%;
+      width: 44%;
       height: 44vw;
     }
 
@@ -1352,11 +1352,11 @@ h3 {
     }
 
     .team__btn_prev {
-      left: 11.712vw;
+      left: 17.712vw;
     }
 
     .team__btn_next {
-      right: 11.712vw;
+      right: 17.712vw;
     }
 
     .team__item-wrapper {
@@ -1366,13 +1366,18 @@ h3 {
       background-color: $secondary-color;
     }
 
-    .team__item-title {
+    .team__item-inner {
       margin-top: 13px;
-      margin-bottom: 4px;
-      font-weight: bold;
+    }
+
+    .team__item-title {
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 21px;
     }
 
     .team__item-jobTitle {
+      margin-top: 4px;
       font-style: normal;
       font-weight: 400;
       font-size: 14px;
@@ -1645,7 +1650,7 @@ h3 {
     }
 
     .faq__question {
-      padding: 10px 17px 11px 15px;
+      padding: 10px 17% 11px 15px;
     }
 
     .faq__question::after,
@@ -1861,6 +1866,7 @@ h3 {
 
     .reviews__slider {
       margin-top: 53px;
+      margin-bottom: 31px;
     }
 
     .reviews__slide {
@@ -1874,7 +1880,6 @@ h3 {
     }
 
     .reviews__item-title {
-      margin-top: 31px;
       font-size: 18px;
       line-height: 21px;
     }
@@ -1884,15 +1889,15 @@ h3 {
     }
 
     .reviews__btn_next {
-      right: -25px;
+      right: -1px;
     }
 
     .reviews__btn_prev {
-      left: -25px;
+      left: -1px;
     }
 
     .reviews__footer {
-      margin: 23px auto 0;
+      margin: 22px auto 0;
       display: flex;
       flex-direction: row;
       justify-content: center;
@@ -1930,6 +1935,8 @@ h3 {
     .reviews__item_wrapper {
       padding: 148px 40px 28px;
       margin-top: -113px;
+      margin-left: auto;
+      margin-right: auto;
       width: 83%;
     }
 
@@ -1941,7 +1948,6 @@ h3 {
     .reviews__item-content {
       margin-top: 13px;
       line-height: 23px;
-      text-align: left;
     }
 
     .reviews__btn_prev,
@@ -1952,12 +1958,12 @@ h3 {
     }
 
     .reviews__btn_prev {
-      left: -93px;
+      left: 109px;
       background-image: url(../images/svg/long-arrow-prev.svg);
     }
 
     .reviews__btn_next {
-      right: -93px;
+      right: 104px;
       background-image: url(../images/svg/long-arrow-next.svg);
     }
 
