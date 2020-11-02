@@ -735,6 +735,7 @@ h3 {
 
     .breed-features__description {
       margin-bottom: 48px;
+      min-height: 78px;
       width: 62%;
       line-height: 26px;
     }
@@ -841,7 +842,6 @@ h3 {
     position: absolute;
 
     .features-list__item {
-      position: absolute;
       text-align: left;
     }
 
@@ -860,8 +860,8 @@ h3 {
     }
 
     .features-list__item_friendly {
-      top: -1px;
-      left: -360px;
+      top: 150px;
+      left: -276px;
       max-width: 168px;
       font-size: 14px;
       line-height: 21px;
@@ -873,8 +873,8 @@ h3 {
     }
 
     .features-list__item_trained {
-      top: 71px;
-      //left: 227px;          раскомментить! или поменять на right -227
+      top: 159px;
+      right: -311px;
       max-width: 132px;
       line-height: 25px;
     }
@@ -885,9 +885,9 @@ h3 {
     }
 
     .features-list__item_weight {
-      top: 219px;
-      //left: 202px;
-      right: -318px;
+      top: 207px;
+
+      right: -286px;
       max-width: 116px;
       line-height: 23px;
     }
@@ -898,8 +898,8 @@ h3 {
     }
 
     .features-list__item_lynx {
-      top: 191px;
-      left: -341px;
+      top: 109px;
+      left: -257px;
       max-width: 138px;
       line-height: 23px;
     }
@@ -919,8 +919,8 @@ h3 {
     }
 
     .features-list__item_friendly {
-      top: -70px;
-      left: -535px;
+      top: 22px;
+      left: -408px;
       max-width: 255px;
       font-size: 14px;
     }
@@ -931,8 +931,8 @@ h3 {
     }
 
     .features-list__item_trained {
-      top: 38px;
-      right: -557px;
+      top: 88px;
+      right: -482px;
       max-width: 202px;
     }
 
@@ -942,8 +942,8 @@ h3 {
     }
 
     .features-list__item_weight {
-      top: 260px;
-      right: -487px;
+      top: 259px;
+      right: -445px;
       max-width: 169px;
     }
 
@@ -953,8 +953,8 @@ h3 {
     }
 
     .features-list__item_lynx {
-      top: 217px;
-      left: -510px;
+      top: 170px;
+      left: -383px;
       max-width: 213px;
       line-height: 23px;
     }
